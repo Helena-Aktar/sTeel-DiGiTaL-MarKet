@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <!-- ===== Iconsout CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ===== Fontawesome CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- ===== Stylesheet ====== -->
+    <!-- ------------- Bootstrap CSS --------- -->
+    <!-- <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="/home&all/bootstrap-copy.css" />
+    <link rel="stylesheet" href="/home&all/homePage.css" />
+    <link rel="stylesheet" href="/home&all/registrationPage.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid" id="overrides">
+      <!-- ========== navBAr ============= -->
+      <div class="navBar">
+        <div class="logo text-center mt-3" style="color: var(--color-primary)">
+          <h3>Steel Digital Market</h3>
+        </div>
+
+        <!-- ------- nav top end --------- -->
+
+        <!-- ------- nav bottom --------- -->
+
+        <!-- <div class="background_darker"></div> -->
+      </div>
+      <!-- ========== navBAr End ============= -->
+      <!-- ========== main body ============= -->
+      <div class="main_body m-3 ms-5 me-5 p-3">
+        <!-- ================ JUst For You ============ -->
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center">
+          <form class="p-2" action="">
+            <div class="row">
+              <!-- select region  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Country/Region:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <select class="border m-1 p-1" name="cars" id="cars">
+                    <option value="Bangladesh">Bangladesh</option>
+                    <option value="Canada">Canada</option>
+                    <option value="USA">USA</option>
+                    <option value="India">India</option>
+                  </select>
+                </div>
+              </div>
+              <!-- end of select region  -->
+              <!-- Please select trade role -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Please select trade role:</h6>
+                </div>
+
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    type="radio"
+                    id="buyer"
+                    name="mode_of_transport"
+                    value="Buyer"
+                  />
+                  <label for="buyer">Buyer</label>
+
+                  <input
+                    type="radio"
+                    id="seller"
+                    name="mode_of_transport"
+                    value="Seller"
+                  />
+                  <label for="seller"> Seller </label>
+
+                  <input
+                    type="radio"
+                    id="both"
+                    name="mode_of_transport"
+                    value="Both"
+                  />
+                  <label for="both">Both</label>
+                </div>
+              </div>
+              <!-- end of Please select trade role -->
+              <!-- Email Address  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Email Address:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text text-muted"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Please set the email as the login name."
+                  />
+                </div>
+              </div>
+              <!-- end of Email Address  -->
+              <!-- Login Password  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Login Password:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="login_password"
+                    name="login_password"
+                    placeholder="Set the login password"
+                  />
+                </div>
+              </div>
+              <!-- end of Login Password  -->
+              <!-- Confirm Password  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Confirm Password:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="confirm_password"
+                    name="confirm_password"
+                    placeholder="Enter the login password again"
+                  />
+                </div>
+              </div>
+              <!-- end of Confirm Password  -->
+              <!-- Company Name -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Company Name:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="company_name"
+                    name="company_name"
+                    placeholder="Please enter your company name"
+                  />
+                </div>
+              </div>
+              <!-- end of Company Name  -->
+              <!-- full_name -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Full Name:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    placeholder="Please enter your full name"
+                  />
+                </div>
+              </div>
+              <!-- end of full_name  -->
+              <!-- Phone number -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Phone Number:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="phone_number"
+                    name="phone_number"
+                    placeholder="Enter your phone number"
+                  />
+                </div>
+              </div>
+              <!-- end of full_name  -->
+              <!-- full_name -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Full Name:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="full_name"
+                    name="full_name"
+                    placeholder="Please enter your full name"
+                  />
+                </div>
+              </div>
+              <!-- end of full_name  -->
+            </div>
+            <div class="d-flex justify-content-center text-muted">
+              <input type="checkbox" />
+              <p class="mt-1 m-1">
+                By continuing, you agree to NDE's
+                <a href="#">Conditions of Use</a> and
+                <a href="#"> Privacy Notice.</a>
+              </p>
+            </div>
+            <div class="d-flex justify-content-center mt-2 m-2">
+              <button
+                class="rounded-3 p-2 fs-6"
+                id="register_button"
+                type="submit"
+              >
+                Agree & Register
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ================ registration end ============ -->
+      </div>
+
+      <!-- ========== footer ============= -->
+      <div class="footer">
+        <!-- footer top -->
+        <div class="ms-5 me-5 mt-3 mb-3 ps-5 pe-5">
+          <div class="p-2">
+            <div class="d-flex justify-content-around">
+              <!-- customer service -->
+              <div class="text-white d-grid h-100">
+                <h6>Customer services</h6>
+                <a href="#">Help Center</a>
+                <a href="#">Report abuse</a>
+                <a href="#">Open a case</a>
+                <a href="#">Policies & rules</a>
+                <a href="#">Get paid for your feedback</a>
+              </div>
+              <!-- about us -->
+              <div class="text-white d-grid h-100">
+                <h6>About us</h6>
+                <a href="#">About AeSteelbd.com</a>
+                <a href="#">About eSteelbd Group</a>
+                <a href="#">eSteelbd.com Blog</a>
+                <a href="#">Legal Notice</a>
+              </div>
+              <!-- Source on eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Source on eSteelbd.com</h6>
+                <a href="#">Resources</a>
+                <a href="#">All categories</a>
+                <a href="#">Request for Quotation</a>
+                <a href="#">Ready to Ship</a>
+                <a href="#">Buyer partners</a>
+                <a href="#">eSteelbd.com Select</a>
+              </div>
+              <!-- Sell on  eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Sell on eSteelbd.com</h6>
+                <a href="#">Supplier memberships</a>
+                <a href="#">Learning Center</a>
+                <a href="#">Partner Program</a>
+              </div>
+              <!-- Trade services -->
+              <div class="text-white d-grid h-100">
+                <h6>Trade services</h6>
+                <a href="#">Trade Assurance</a>
+                <a href="#">Business identity</a>
+                <a href="#">Logistics services</a>
+                <a href="#">Production Monitoring & Inspection Services</a>
+                <a href="#">Letter of Credit</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_delimiter m-3"></div>
+
+          <!-- footer bottom -->
+          <div class="text-white d d-flex justify-content-around pe-5 ps-5 p-1">
+            <!-- bottoms top -->
+
+            <div class="text-white d d-flex justify-content-around">
+              <!-- download apps -->
+              <span class="pt-1">Download: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/App store.PNG"
+                alt=""
+              />&nbsp
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/google play.PNG"
+                alt=""
+              />
+            </div>
+            <!-- suppliers app -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-1">eSteelbd Suppliers App: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 30px"
+                src="./images/NDE_Favicon3-modified .png"
+                alt=""
+              />
+            </div>
+            <!-- Follow Us -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-2">Follow Us: &nbsp</span>
+              <div class="social_media fs-4">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer_appendix text-white m-2 text-center">
+            <div>
+              <i class="fa-solid fa-earth-asia"></i>
+              eSteelbd Site: International - Español - Português - Deutsch -
+              Français - Italiano - हिंदी - Pусский - 한국어 - 日本語 - اللغة
+              العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - Indonesian -
+              עברית
+            </div>
+            <div>
+              eSteelbd.com | 1688.com | Tmall Taobao World | ePay | Lazada
+            </div>
+            <div>
+              Browse Alphabetically: Onetouch | Showroom | Country Search |
+              Suppliers | Affiliate
+            </div>
+            <div>
+              Product Listing Policy - Intellectual Property Protection -
+              Privacy Policy - Terms of Use - User Information Legal Enquiry
+              Guide
+            </div>
+          </div>
+          <div class="copyright text-white text-center m-3">
+            © 2023-2023 eSteelbd.com. All rights reserved.
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <script src="/home&all/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="/home&all/registrationPage.js"></script>
+    <!-- <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

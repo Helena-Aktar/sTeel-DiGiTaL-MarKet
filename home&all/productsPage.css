@@ -1,0 +1,19 @@
+:root {
+  --color-primary: var(--bs-indigo);
+  --color-gray: hsl(0, 0%, 89%);
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+  /* text-decoration: none !important; */
+  list-style: none;
+  border: none;
+}
+
+body {
+  background: var(--color-gray);
+}

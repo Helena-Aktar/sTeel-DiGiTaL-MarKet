@@ -1,0 +1,2092 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HomePage</title>
+    <!-- ===== Iconsout CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ===== Fontawesome CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- ===== Stylesheet ====== -->
+    <!-- ------------- Bootstrap CSS --------- -->
+    <!-- <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="/home&all/bootstrap-copy.css" />
+    <link rel="stylesheet" href="/home&all/homePage.css" />
+  </head>
+  <body class="w-100">
+    <div class="container-fluid" id="overrides">
+      <!-- ========== navBAr ============= -->
+      <div class="navBar">
+        <!-- ------- nav top --------- -->
+        <div class="nav_top" style="z-index: 200;">
+          <!-- style="position: fixed; width: 100%; z-index: 200;" -->
+          <!-- ---------- nav top left ------------ -->
+          <div class="nav_top-left pt-2" style="width: 250px">
+            <div class="logo text-center ps-5">
+              <h6 style="width: 200px">Steel Digital Market</h6>
+            </div>
+            <div class="categories">
+              <div><i class="fa-solid fa-list"></i></div>
+              <div class="ps-1 pe-1">Categories</div>
+              <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+          </div>
+          <!-- ---------- nav top right ------------ -->
+          <div class="nav_top-right pt-2" style="width: 550px">
+            <!-- ---------- nav top right-1 ------------ -->
+            <div class="nav_top-right-1 d-flex" style="width: 200px">
+              <!-- ---- profile --- -->
+              <div id="profile" class="profile">
+                <i class="fa-solid fa-user px-1"></i>
+
+                <i class="fa-solid fa-angle-down px-1"></i>
+                <!-- profile popup -->
+                <div
+                  id="profile-popup"
+                  class="profile-popup rounded-3 bg-white"
+                  style="width: 15%"
+                >
+                  <div class="m-2 p-2">
+                    <div class="d-grid gap-2">
+                      <a
+                        href="./signinPage.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--bs-indigo);
+                          background: var(--bs-indigo);
+                        "
+                      >
+                        Sign in
+                      </a>
+                      <a
+                        href="./registrationPage.html"
+                        class="btn rounded-5 p-1 fw-bold btn-outline"
+                        style="border: 1px solid gray"
+                      >
+                        Join for free
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ---- messages --- -->
+              <div class="messages">
+                <i class="fa-solid fa-message px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+              <!-- ---- trade_assurance --- -->
+              <div class="trade_assurance">
+                <i class="fa-solid fa-clipboard-list px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+              <!-- ----  --- -->
+              <div class="bag">
+                <i class="fa-solid fa-bag-shopping px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+            </div>
+            <!-- ---------- nav top right-2 ------------ -->
+            <div class="nav_top-right-2 d-flex" style="width: 350px">
+              <div class="delimiter"></div>
+              <div class="help d-flex">
+                Help
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="delimiter"></div>
+              <div class="d-flex">
+                English-BDT
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <!-- <div class="delimiter"></div> -->
+              <div class="location d-flex">
+                Ship to:
+                <div>
+                  <img class="img-fluid" src="./images/bangladesh.png" alt="" />
+
+                  <!-- <img class="img-fluid" src="./images/bangladesh.png" alt="" /> -->
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="delimiter"></div>
+              <div class="more d-flex">
+                More
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------- nav top end --------- -->
+
+        <!-- ------- nav bottom --------- -->
+        <div class="nav_bottom">
+          <div class="nav_bottom-header d-flex">
+            <a href="./productsPage.html" class="nav_bottom-header-item m-3"
+              >Products</a
+            >
+            <a href="/sellers&Product_details/Index.html" class="nav_bottom-header-item m-3"
+              >Sellers</a
+            >
+            <!-- <div class="nav_bottom-header-item m-3">Sellers</div> -->
+          </div>
+
+          <!-- ------- search bar ------ -->
+          <!--      style="z-index: 1000; position: fixed; width: 850px; left: 450px" -->
+          <div
+            id="mySearchBar"
+            class="d-flex justify-content-center"
+            style="z-index: 1000"
+          >
+            <div
+              id="nav_bottom-search_bar"
+              class="nav_bottom-search_bar d-flex justify-content-center bg-white"
+            >
+              <!-- <div class="flex-grow-1"> -->
+              <input
+                class="w-100 ms-3"
+                type="search"
+                id="search_product"
+                placeholder="search here.."
+              />
+              <!-- </div> -->
+              <div class="d-flex">
+                <!-- ms-5 mt-1 me-2 ps-4 -->
+                <div class="cam-icon mt-1 me-2">
+                  <i class="fa-solid fa-camera pt-2"></i>
+                </div>
+                <button
+                  class="search_button text-center p-2"
+                  id="search_button"
+                  onclick="search()"
+                >
+                  <i class="fa-solid fa-magnifying-glass"></i>
+                  Search
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- nav bottom links -->
+          <div class="d-flex justify-content-center m-1">
+            <div class="nav_bottom-links text-center w-75 rounded-pill p-2">
+              <a class="ms-1" href="#">dress</a>
+              <a class="ms-1" href="#">gucci shoes</a>
+              <a class="ms-1" href="#">t-shirt for men</a>
+              <a class="ms-1" href="#">finger sleeve</a>
+              <a class="ms-1" href="#">shoes men</a>
+              <a class="ms-1" href="#">shoes men</a>
+              <a class="ms-1" href="#">kitchen cabinet</a>
+              <a class="ms-1" href="#">shoes men</a>
+              <a class="ms-1" href="#">shoes men</a>
+              <a class="ms-1" href="#">electronics</a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="background_darker"></div> -->
+      </div>
+      <!-- scroll to top -->
+      <div class="bg-warning">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa-solid fa-angle-up"></i>
+        </button>
+      </div>
+      <!-- ========== navBAr End ============= -->
+      <!-- ========== main body ============= -->
+      <div class="main_body p-3">
+        <!-- --------- main tools --------- -->
+        <div class="main_tools d-flex justify-content-around rounded-3  p-3" style="margin-left: 150px; margin-right: 150px;">
+          <!-- ------- tool 1 ----- -->
+          <div class="tool d-flex">
+            <div><i class="fa-solid fa-compass pt-2"></i></div>
+            <div class="ps-3">
+              <div class="fs-5 fw-bold">Request for Quotation</div>
+              <div class="text-muted">One request, multiple quotes</div>
+            </div>
+          </div>
+          <div class="delimiter-long"></div>
+          <!-- ------- tool 2 ----- -->
+          <div class="tool d-flex">
+            <div><i class="fa-solid fa-boxes-packing pt-2"></i></div>
+            <div class="ps-3">
+              <div class="fs-5 fw-bold">Ready to Ship</div>
+              <div class="text-muted">Order directly with fast dispatch</div>
+            </div>
+          </div>
+          <div class="delimiter-long"></div>
+          <!-- ------- tool 3 ----- -->
+          <div class="tool d-flex">
+            <div><i class="fa-solid fa-truck-fast pt-2"></i></div>
+            <div class="ps-3">
+              <div class="fs-5 fw-bold">Logistics services</div>
+              <div class="text-muted">Reliable shipping by ocean and air</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ------- main top div -------- -->
+        <div class="row d-flex text-center">
+          <!-- ad 1 -->
+     
+           <div class=" col-1 pe-1" style="position: relative; top: -35px; " >
+            <div class="ad_header bg" style="position: absolute; top: -17px; width: 200px;"> 
+              <span class="text-start"> <h5 class="text-muted ms-1">Advertisement</h5></span>
+              <i id="ad1_cross_button" style="position: absolute; top: 0; right: 0; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+            </div>
+             <img class="ad1" style="height: 500px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster (1).png" alt="">
+          </div>
+
+          <div class="col-10">
+
+            <div class="main_top d-flex rounded-3 justify-content-around" style="margin-left: 60px; margin-right: 60px;">
+              <!-- --------------- my market ------------ -->
+              <div class="main_top-my_market m-2 p-2">
+                <h6 class="text-start">My Markets</h6>
+                <div class="market_delimiter"></div>
+                <!-- -------my market items --------- -->
+                <!-- item 1 -->
+                <div
+                  id="consumerParrent"
+                  class="my_market-item d-flex justify-content-between m-2"
+                >
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 1.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Consumer Electronics</p>
+                    <!-- profile popup -->
+                    <div
+                      id="consumer-popup"
+                      class="consumer-popup rounded-3 bg-white"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <div class="d-flex">
+                            <div class="me-3">
+                            <h6>Computer Hardware & Software</h6>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                          <div class="me-3">
+                            <h6>Cables & Commonly Used Accessories</h6>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                          <div class="me-3">
+                            <h5>Computer Hardware & Software</h5>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                        </div>
+                          <div class="d-flex">
+                            <div class="me-3">
+                            <h6>Computer Hardware & Software</h6>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                          <div class="me-3">
+                            <h6>Computer Hardware & Software</h6>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                          <div class="me-3">
+                            <h6>Computer Hardware & Software</h6>
+                            <p class="text-muted">Tablet PC Stands</p>
+                            <p class="text-muted">Mini PCs</p>
+                            <p class="text-muted">Desktops</p>
+                            <p class="text-muted">Servers</p>
+                            <p class="text-muted">Other Networking Devices</p>
+                            </p>
+                          </div>
+                        </div>
+                     
+    
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 2 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 2.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Apparel</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 3 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 3.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Vehicle Accessories</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 4 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 4.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Sports & Entertainment</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 5 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 5.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Home & Garden</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 6 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 6.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Beauty</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 7 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-100"
+                        src="./images/mymarket 7.webp"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">All Categories</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+                <!-- item 8 -->
+                <div class="my_market-item d-flex justify-content-between m-2">
+                  <div class="d-flex">
+                    <div class="photo">
+                      <img
+                        class="d-block w-75"
+                        src="./images/mymarket 8.png"
+                        alt=""
+                      />
+                    </div>
+                    <p class="m-2">Consumer Electronics</p>
+                  </div>
+                  <i class="fa-solid fa-angle-right mt-3"></i>
+                </div>
+              </div>
+    
+              <!-- ------- main top slider -------- -->
+              <div class="main_top-slider m-2 p-2">
+                <div
+                  id="carouselExampleDark"
+                  class="carousel carousel-dark slide"
+                  data-bs-ride="carousel"
+                >
+                  <!-- ------------ carousel indicators ------------ -->
+                  <div class="carousel-indicators">
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="0"
+                      class="active"
+                      aria-current="true"
+                      aria-label="Slide 1"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="1"
+                      aria-label="Slide 2"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="2"
+                      aria-label="Slide 3"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="3"
+                      aria-label="Slide 4"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="4"
+                      aria-label="Slide 5"
+                    ></button>
+                    <button
+                      type="button"
+                      data-bs-target="#carouselExampleDark"
+                      data-bs-slide-to="5"
+                      aria-label="Slide 6"
+                    ></button>
+                  </div>
+                  <!-- ----------------inner carousel -------------- -->
+                  <div class="carousel-inner for_img">
+                    <!-- ---- carousel item 1 ----------- -->
+                    <div class="carousel-item active" data-bs-interval="5000">
+                      <img
+                        src="./images/Capture 0.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                      <!-- <div class="carousel-caption d-none d-md-block">
+                        <h5>First slide label</h5>
+                        <p>
+                          Some representative placeholder content for the first
+                          slide.
+                        </p>
+                      </div> -->
+                    </div>
+                    <!-- ---- carousel item 2 ------------- -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img
+                        src="./images/Capture 1.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- ---- carousel item 3 -------------- -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img
+                        src="./images/Capture 2.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- ---- carousel item 4 ---------------- -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img
+                        src="./images/Capture 3.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- ---- carousel item 5 ----------------- -->
+                    <div class="carousel-item" data-bs-interval="3000">
+                      <img
+                        src="./images/Capture 4.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                    <!-- ---- carousel item 6 ----------------- -->
+                    <div class="carousel-item">
+                      <img
+                        src="./images/Capture 5.PNG"
+                        class="d-block img-fluid"
+                        alt="..."
+                      />
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleDark"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="main_top-buyers_club m-2 p-2">
+                <div class="d-flex justify-content-between">
+                  <h5>Buyers Club benefits</h5>
+                  <h5><i class="fa-solid fa-arrow-right"></i></h5>
+                </div>
+                <!-- benefit cards -->
+                <div
+                  class="d-flex justify-content-between rounded-3 m-2 p-2"
+                  style="background: var(--color-gray)"
+                >
+                  <p class="m-2 w-75">US $10 off with a new supplier</p>
+                  <img
+                    class="w-25 h-25 rounded-3"
+                    src="./images/benefit card 1.jpg"
+                    alt=""
+                  />
+                </div>
+                <div
+                  class="d-flex justify-content-between rounded-3 m-2 p-2"
+                  style="background: var(--color-gray)"
+                >
+                  <p class="m-2 w-75">RFQ: quotes with supplier preferences</p>
+                  <img
+                    class="w-25 h-25 rounded-3"
+                    src="./images/benefit card 2.jpg"
+                    alt=""
+                  />
+                </div>
+                <!-- sign up msg -->
+                <div class="p-2">
+                  <h6 class="fw-bold">
+                    Sign up to enjoy exciting Buyers Club benefits
+                  </h6>
+                  <div class="d-grid gap-2">
+                    <button
+                      class="buyersClub_btn-join rounded-5 p-1 fw-bold"
+                      type="button"
+                    >
+                      Join for free
+                    </button>
+                    <button
+                      class="buyersClub_btn-signin rounded-5 p-1 fw-bold"
+                      type="button"
+                    >
+                      Sign in
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- =========== main top end ================== -->
+          </div>
+          <!-- ad 2 -->
+                 <div class=" col-1 pe-1" style="position: relative; top: -35px; right: 60px;" >
+                  <img class="ad2" style="height: 500px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster.png" alt="">
+                  <i id="image_cross_button" style="position: absolute; top: 0; right: -54px; padding: 1px; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+                <!-- cross button -->
+                  <div class="bg-light ad2_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
+                   
+                    <p style="text-align: center; padding-top: 200px;">Why this ad?</p>
+                    <i id="image_cross_button-active" style="position: absolute; top: 0; right: 0; z-index: 100;" class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+                   </div>
+                </div>
+
+        </div>
+        
+        <!-- categorized products -->
+        <div
+          class="categorized_products rounded-3 ps-2"
+          style="background: #fff; margin-left: 60px; margin-right: 60px; margin-bottom: 55px;"
+        >
+          <div
+            class="row row-cols-3 rounded-3 p-3 w-100 d-flex justify-content-around"
+          >
+            <!-- ------------ New arrivals---------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>New arrivals</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/New arrivals.1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 423.30</h5>
+                    <h6 class="text-muted">48.0 pieces</h6>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/New arrivals.2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 898.45</h5>
+                    <h6 class="text-muted">2 pieces</h6>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/New arrivals.3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 68.79.30</h5>
+                    <h6 class="text-muted">2 pieces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- ------------ Top ranking -------------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Top ranking</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/Top ranking 1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 126.99</h5>
+                    <h6 class="text-muted">1 kilogram</h6>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/Top ranking 2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 315.36</h5>
+                    <h6 class="text-muted">1 pieces</h6>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/Top ranking 3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 5238.29</h5>
+                    <h6 class="text-muted">1 pieces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- ------------ Weekly deals -------------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Weekly deals</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/weekly deals 1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2 rounded-3"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 205.30</h5>
+                    <div class="d-flex justify-content-around">
+                      <h6 class="text-muted text-decoration-line-through">
+                        BDT 232.82
+                      </h6>
+                      <h6 class="text-danger fs-6">-12%</h6>
+                    </div>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/weekly deals 2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2 rounded-3"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 447.38</h5>
+                    <div class="d-flex justify-content-around">
+                      <h6 class="text-muted text-decoration-line-through">
+                        BDT 497.38
+                      </h6>
+                      <h6 class="text-danger fs-6">-10%</h6>
+                    </div>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/weekly deals 3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2 rounded-3"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 206.33</h5>
+                    <div class="d-flex justify-content-around">
+                      <h6 class="text-muted text-decoration-line-through">
+                        BDT 306.89
+                      </h6>
+                      <h6 class="text-danger fs-6">-15%</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- ------------ Dropshipping -------------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Dropshipping</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/dropshipping 1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 304.78</h5>
+                    <h6 class="text-muted">1 pieces</h6>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/dropshipping 2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 232.82</h5>
+                    <h6 class="text-muted">1 pieces</h6>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/dropshipping 3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 116.41</h5>
+                    <h6 class="text-muted">1 pieces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- ------------ Regional specialities -------------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Regional specialities</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/ragional 1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 951.36</h5>
+                    <h6 class="text-muted">10.0 sets</h6>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/ragional 2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 188.37</h5>
+                    <h6 class="text-muted">10.0 pieces</h6>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/ragional 3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 11.65</h5>
+                    <h6 class="text-muted">9 pieces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+            <!-- ------------ Tips -------------- -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Tips</h4>
+              <!-- cards -->
+              <div class="d-flex justify-content-around mb-3">
+                <!-- card 1 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/tips 1.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 461.41</h5>
+                    <h6 class="text-muted">100 piece</h6>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/tips 2.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 941.84</h5>
+                    <h6 class="text-muted">1 piece</h6>
+                  </div>
+                </div>
+                <!-- card -3 -->
+                <div
+                  class="newcard border rounded-3 m-2 h-50"
+                  style="background: var(--color-gray)"
+                >
+                  <img
+                    src="./images/tips 3.webp"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div
+                    class="cardText text-center mt-2"
+                    style="background: var(--color-gray)"
+                  >
+                    <h5 class="card-text fw-bold fs-6">BDT 168.79.30</h5>
+                    <h6 class="text-muted">2 pieces</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+        <!-- ============  categorzed product end ================-->
+        
+        <!-- ============  personal live and sample ================ p-3 w-100 d-flex justify-content-around  style="margin-left: 260px; margin-right: 260px;"-->
+        <div class="row d-flex text-center mt-3">
+
+          <!-- ad 3 -->
+           <div class=" col-1 pe-1" style="position: relative; top:-15px " >
+            <div class="ad_header bg" style="position: absolute; top: -17px; width: 200px;"> 
+              <span class="text-start"> <h5 class="text-muted ms-1">Advertisement</h5></span>
+              <i id="ad1_cross_button" style="position: absolute; top: 0; right: 0; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+            </div>
+             <img class="ad1" style="height: 400px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster (2).png" alt="">
+          </div>
+
+          <div class="col-10">
+        <div class="rounded-3 ps-2 bg-white" style="margin-left: 60px; margin-right: 60px;">
+          <div
+            class="row row-cols-3 rounded-3 p-3 w-100 d-flex justify-content-around"
+          >
+            <!-- cols -->
+            <!-- Personal Protective Equipment -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Personal Protective Equipment</h4>
+              <!-- cards -->
+              <div
+                class="d-flex justify-content-around rounded-3 mb-3 border bg-white"
+              >
+                <!-- card 1 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/equipment 1.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center rounded-3">
+                    <button
+                      class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
+                      style="background: var(--bs-indigo); color: white"
+                    >
+                      Show more
+                    </button>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/equipment 2.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center mt-2">
+                    <h5 class="card-text fw-bold fs-6">BDT 941.84</h5>
+                    <h6 class="text-muted">1 piece</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Personal Protective Equipment end -->
+            <!-- LIVE -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>LIVE</h4>
+              <!-- cards -->
+              <div
+                class="d-flex justify-content-around rounded-3 mb-3 border bg-white"
+              >
+                <!-- card 1 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/live 1.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center rounded-3">
+                    <button
+                      class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
+                      style="background: var(--bs-indigo); color: white"
+                    >
+                      Show more
+                    </button>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/live 2.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center mt-2">
+                    <h5 class="card-text fw-bold fs-6">BDT 3984.41</h5>
+                    <h6 class="text-muted">1 piece</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- LIVE end -->
+            <!-- Sample Center -->
+            <div
+              class="my_cols col rounded-3 mt-2 mb-2"
+              style="background: var(--color-gray)"
+            >
+              <h4>Sample Center</h4>
+
+              <!-- cards -->
+              <div
+                class="d-flex justify-content-around rounded-3 mb-3 border bg-white"
+              >
+                <!-- card 1 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/sample 1.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center rounded-3">
+                    <button
+                      class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
+                      style="background: var(--bs-indigo); color: white"
+                    >
+                      Show more
+                    </button>
+                  </div>
+                </div>
+                <!-- card 2 -->
+                <div class="newcard rounded-3 m-2 h-50">
+                  <img
+                    src="./images/sample 2.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                  />
+                  <div class="cardText text-center mt-2">
+                    <h5 class="card-text fw-bold fs-6">BDT 12041.91</h5>
+                    <h6 class="text-muted">1 piece</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Sample Center end -->
+          </div>
+        </div>
+      </div>
+      <!-- ad 4 -->
+             <div class=" col-1 pe-1" style="position: relative; top: -15px; right: 60px;" >
+              <img class="ad4" style="height: 400px; width: 200px;" src="/home&all/images/ads/Yellow Minimalist Buy 1 Get 1 Coffee Ads Instagram Story.png" alt="">
+              <i id="image4_cross_button" style="position: absolute; top: 0; right: -54px; padding: 1px; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+            <!-- cross button -->
+              <div class="bg-light ad4_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
+               
+                <p>;okjsdfl;kjlsdfj</p>
+                <i id="image4_cross_button-active" style="position: absolute; top: 0; right: 0; z-index: 100;" class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+               </div>
+            </div>
+
+    </div>
+
+        <!-- ============  personal live and sample  END ================-->
+
+        <!-- ================ JUst For You ============ -->
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 80px; margin-right: 80px;">
+          <div class="products rounded-3 mt-2 mb-2 w-100 p-2">
+            <h4 class="ms-4">Just For You</h4>
+            <div class="d-flex flex-wrap">
+              <!-- row 1 -->
+              <!-- <div class="d-flex ms-3 me-3 mb-3"> -->
+              <!-- card 1 -->
+              <div class="product d-flex">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 1.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="title d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Water Bottle Purple Portable Gym 5v Charging Vortex
+                      Protein Powder Shake Bottle
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+                <!-- ====== Product details Popup ======= -->
+                <!-- <p style="background-color: blue" class="bg-denger">heloo</p> -->
+                <div
+                  id="product_details-popup"
+                  class="product_details-popup rounded-3 bg-white"
+                  style="width: 350px"
+                >
+                  <div class="m-2 p-2" style="text-align: center">
+                    <img
+                      src="./images/just 1.jpg"
+                      class="rounded-3 w-25 h-25"
+                      alt=""
+                    />
+                    <div class="notification-body">
+                      <h5>Water Bottle Purple</h5>
+                      <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                      <h6 class="text-muted">MOQ: 100 pieces</h6>
+                      <a
+                        href="/sellers&Product_details/product_details/product_details.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--bs-indigo);
+                          background: var(--bs-indigo);
+                          width: 100px;
+                        "
+                      >
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== End of Product details Popup ======= -->
+              </div>
+
+              <!-- card 2 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 2.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="title d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Coin machine
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+
+              <!-- card -3 -->
+              <div class="product d-flex">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 3.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="title d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Grey Bottle
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+                <!-- ====== Product details Popup ======= -->
+                <!-- <p style="background-color: blue" class="bg-denger">heloo</p> -->
+                <div
+                  id="product_details-popup"
+                  class="product_details-popup rounded-3 bg-white"
+                  style="width: 350px"
+                >
+                  <div class="m-2 p-2" style="text-align: center">
+                    <img
+                      src="./images/just 3.jpg"
+                      class="rounded-3 w-25 h-25"
+                      alt=""
+                    />
+                    <div class="notification-body">
+                      <h5>Gray Bottle</h5>
+                      <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                      <h6 class="text-muted">MOQ: 100 pieces</h6>
+                      <a
+                        href="/alibaba page/product_details/product_details.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--bs-indigo);
+                          background: var(--bs-indigo);
+                          width: 100px;
+                        "
+                      >
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== End of Product details Popup ======= -->
+              </div>
+
+              <!-- card 4  -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 4.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="title d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Earbuds
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card -5 -->
+              <div class="product d-flex">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="/sellers&Product_details/product_details/img/big_item.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Keyring
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+                <!-- ====== Product details Popup ======= -->
+                <!-- <p style="background-color: blue" class="bg-denger">heloo</p> -->
+                <div
+                  id="product_details-popup"
+                  class="product_details-popup rounded-3 bg-white"
+                  style="width: 350px"
+                >
+                  <div class="m-2 p-2" style="text-align: center">
+                    <img
+                      src="/sellers&Product_details/product_details/img/big_item.jpg"
+                      class="rounded-3 w-25 h-25"
+                      alt=""
+                    />
+                    <div class="notification-body">
+                      <h5>Keyring</h5>
+                      <h5 class="card-text fw-bold fs-6">BDT 160.50</h5>
+                      <h6 class="text-muted">MOQ: 10 pieces</h6>
+                      <a
+                        href="/sellers&Product_details/product_details/product_details.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--bs-indigo);
+                          background: var(--bs-indigo);
+                          width: 100px;
+                        "
+                      >
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== End of Product details Popup ======= -->
+              </div>
+              <!-- card end -->
+              <!-- </div> -->
+              <!-- row-1 end -->
+              <!-- row-2  -->
+              <!-- <div class="d-flex justify-content-between ms-3 me-3 mb-3"> -->
+              <!-- card 1 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 6.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Mug
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 7.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Pencil Stand
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card -3 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 8.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Shake Water Bottle
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4  -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 9.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Purple Bag
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card -5 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 10.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Pink Pencil Stand
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card end -->
+              <!-- </div> -->
+              <!-- row-2 end -->
+              <!-- row-3 -->
+              <!-- <div class="d-flex justify-content-between ms-3 me-3 mb-3"> -->
+              <!-- card 1 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 11.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Blue Pendent
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 12.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Nike Shoes
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card -3 -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 13.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Butterfly Pendent
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card 4  -->
+              <div class="product">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 14.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Gucci Hand Bags
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+              </div>
+              <!-- card -5 -->
+              <div class="product d-flex">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 15.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      Gucci White Shoes
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+                <!-- ====== Product details Popup ======= -->
+                <div
+                  class="product_details-popup rounded-3 w-25 bg-white"
+                  id="product_details-popup"
+                >
+                  <div class="m-2 p-2">
+                    <img
+                      src="./images/just 15.jpg"
+                      class="rounded-3 w-25 h-25"
+                      alt=""
+                    />
+
+                    <div class="notification-body">
+                      <b> Chandler Bing </b> accepted your friend request
+                      <small class="text-muted">2 days ago</small>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== End of Product details Popup ======= -->
+              </div>
+              <!-- card end -->
+              <!-- </div> -->
+              <!-- row-3 end -->
+            </div>
+          </div>
+        </div>
+        <!-- ================ JUst For You end ============ -->
+        <!-- ================ Trade services ============ -->
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 80px; margin-right: 80px;">
+          <div class="rounded-3 mt-2 mb-2 w-100">
+            <div class="d-flex">
+              <h4 class="ms-4">Trade services</h4>
+              <span class="ms-2 mt-1 fs-6" style="color: rgb(113, 112, 112)">
+                eSteelbd.com's trade services help ensure that your purchases
+                are protected.
+              </span>
+            </div>
+            <!-- row 1 -->
+            <div class="d-flex justify-content-between ms-3 me-3 mb-3">
+              <!-- card 1 -->
+              <div class="newcard border rounded-3 m-2 h-50">
+                <img
+                  src="./images/trade 1.jpg"
+                  class="card-img-top rounded-3"
+                  alt=""
+                  style="height: 220px; width: 300px"
+                />
+                <div class="d-flex justify-content-between">
+                  <div class="cardText m-2">
+                    <h5 class="card-text fw-bold fs-6">Trade Assurance</h5>
+                    <h6 class="text-muted">ORDER PROTECTION</h6>
+                  </div>
+
+                  <img
+                    class="rounded-3 m-3"
+                    style="height: 40px; width: 40px"
+                    src="./images/trade assurance.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- card 2 -->
+              <div class="newcard border rounded-3 m-2 h-50">
+                <img
+                  src="./images/pay.jpg"
+                  class="card-img-top rounded-3"
+                  alt=""
+                  style="height: 220px; width: 300px"
+                />
+                <div class="d-flex justify-content-between">
+                  <div class="cardText m-2">
+                    <h5 class="card-text fw-bold fs-6">Payment</h5>
+                    <h6 class="text-muted">PAYMENT SOLUTION</h6>
+                  </div>
+
+                  <img
+                    class="rounded-3 m-3"
+                    style="height: 40px; width: 40px"
+                    src="./images/pay icon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- card -3 -->
+              <div class="newcard border rounded-3 m-2 h-50">
+                <img
+                  src="./images/INSPECTION.jpg"
+                  class="card-img-top rounded-3"
+                  alt=""
+                  style="height: 220px; width: 300px"
+                />
+                <div class="d-flex justify-content-between">
+                  <div class="cardText m-2">
+                    <h5 class="card-text fw-bold fs-6">Inspection solution</h5>
+                    <h6 class="text-muted">INSPECTION</h6>
+                  </div>
+
+                  <img
+                    class="rounded-3 m-3"
+                    style="height: 40px; width: 40px"
+                    src="./images/inspection icon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <!-- card 4  -->
+              <div class="newcard border rounded-3 m-2 h-50">
+                <img
+                  src="./images/shipping .jpg"
+                  class="card-img-top rounded-3"
+                  alt=""
+                  style="height: 220px; width: 300px"
+                />
+                <div class="d-flex justify-content-between">
+                  <div class="cardText m-2">
+                    <h5 class="card-text fw-bold fs-6">
+                      Ocean and air shipping
+                    </h5>
+                    <h6 class="text-muted">LOGISTIC SERVICE</h6>
+                  </div>
+
+                  <img
+                    class="rounded-3 m-3"
+                    style="height: 40px; width: 40px"
+                    src="./images/shipping icon.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+
+              <!-- card end -->
+            </div>
+          </div>
+        </div>
+        <!-- ================ Trade services end ============ -->
+        <!-- ================ Trade services ============ -->
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 60px; margin-right: 60px;">
+          <div class="rounded-3 mt-2 mb-2 w-100">
+            <div class="d-flex justify-content-between">
+              <h4>Suppliers by country or region</h4>
+              <h5><i class="fa-solid fa-arrow-right fs-4 me-2"></i></h5>
+            </div>
+            <div class="d-flex justify-content-between ms-3 me-3 mb-3">
+              <!-- japan-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/japan.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Japan</h6>
+              </div>
+              <!-- usa-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/usa.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">USA</h6>
+              </div>
+              <!-- Italy-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/italy.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Italy</h6>
+              </div>
+              <!-- Turkey-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/turkey.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Turkey</h6>
+              </div>
+              <!-- Malaysia-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/Malaysia.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Malaysia</h6>
+              </div>
+              <!-- South Korea-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 150px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/South Korea.jpg"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">South Korea</h6>
+              </div>
+              <!-- Vietnam-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/Vietnam.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Vietnam</h6>
+              </div>
+              <!-- Russia -->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/Russia.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Russia</h6>
+              </div>
+              <!-- Thailand-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="
+                  width: 100px;
+                  height: 50px;
+                  background: var(--color-gray);
+                "
+              >
+                <img
+                  class="mt-2"
+                  style="height: 30px; width: 35px"
+                  src="./images/Thailand.png"
+                  alt=""
+                />
+                <h6 class="text-muted mt-3">Thailand</h6>
+              </div>
+              <!-- More-->
+              <div
+                class="rounded-3 m-2 d-flex justify-content-around"
+                style="width: 100px; height: 50px"
+              >
+                <a class="fs-6 fw-bold mt-3" style="text-decoration: none"
+                  >More</a
+                >
+              </div>
+              <!-- card end -->
+            </div>
+          </div>
+        </div>
+        <!-- ================ Trade services end ============ -->
+      </div>
+
+      <!-- ========== footer ============= -->
+      <div class="footer">
+        <!-- footer top -->
+        <div class="ms-5 me-5 mt-3 mb-3 ps-5 pe-5">
+          <div class="p-2">
+            <div class="d-flex justify-content-around">
+              <!-- customer service -->
+              <div class="text-white d-grid h-100">
+                <h6>Customer services</h6>
+                <a href="#">Help Center</a>
+                <a href="#">Report abuse</a>
+                <a href="#">Open a case</a>
+                <a href="#">Policies & rules</a>
+                <a href="#">Get paid for your feedback</a>
+              </div>
+              <!-- about us -->
+              <div class="text-white d-grid h-100">
+                <h6>About us</h6>
+                <a href="#">About AeSteelbd.com</a>
+                <a href="#">About eSteelbd Group</a>
+                <a href="#">eSteelbd.com Blog</a>
+                <a href="#">Legal Notice</a>
+              </div>
+              <!-- Source on eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Source on eSteelbd.com</h6>
+                <a href="#">Resources</a>
+                <a href="#">All categories</a>
+                <a href="#">Request for Quotation</a>
+                <a href="#">Ready to Ship</a>
+                <a href="#">Buyer partners</a>
+                <a href="#">eSteelbd.com Select</a>
+              </div>
+              <!-- Sell on  eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Sell on eSteelbd.com</h6>
+                <a href="#">Supplier memberships</a>
+                <a href="#">Learning Center</a>
+                <a href="#">Partner Program</a>
+              </div>
+              <!-- Trade services -->
+              <div class="text-white d-grid h-100">
+                <h6>Trade services</h6>
+                <a href="#">Trade Assurance</a>
+                <a href="#">Business identity</a>
+                <a href="#">Logistics services</a>
+                <a href="#">Production Monitoring & Inspection Services</a>
+                <a href="#">Letter of Credit</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_delimiter m-3"></div>
+
+          <!-- footer bottom -->
+          <div class="text-white d d-flex justify-content-around pe-5 ps-5 p-1">
+            <!-- bottoms top -->
+
+            <div class="text-white d d-flex justify-content-around">
+              <!-- download apps -->
+              <span class="pt-1">Download: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/App store.PNG"
+                alt=""
+              />&nbsp
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/google play.PNG"
+                alt=""
+              />
+            </div>
+            <!-- suppliers app -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-1">eSteelbd Suppliers App: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 30px"
+                src="./images/NDE_Favicon3-modified .png"
+                alt=""
+              />
+            </div>
+            <!-- Follow Us -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-2">Follow Us: &nbsp</span>
+              <div class="social_media fs-4">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer_appendix text-white m-2 text-center">
+            <div>
+              <i class="fa-solid fa-earth-asia"></i>
+              eSteelbd Site: International - Español - Português - Deutsch -
+              Français - Italiano - हिंदी - Pусский - 한국어 - 日本語 - اللغة
+              العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - Indonesian -
+              עברית
+            </div>
+            <div>
+              eSteelbd.com | 1688.com | Tmall Taobao World | ePay | Lazada
+            </div>
+            <div>
+              Browse Alphabetically: Onetouch | Showroom | Country Search |
+              Suppliers | Affiliate
+            </div>
+            <div>
+              Product Listing Policy - Intellectual Property Protection -
+              Privacy Policy - Terms of Use - User Information Legal Enquiry
+              Guide
+            </div>
+          </div>
+          <div class="copyright text-white text-center m-3">
+            © 2023-2023 eSteelbd.com. All rights reserved.
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <script src="/home&all/bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js"></script>
+    <script src="/home&all/homepage.js"></script>
+    <!-- <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

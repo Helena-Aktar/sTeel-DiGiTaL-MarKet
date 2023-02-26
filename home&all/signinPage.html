@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in Page</title>
+    <!-- ===== Iconsout CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <!-- ===== Fontawesome CDN ======= -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- ===== Stylesheet ====== -->
+    <!-- ------------- Bootstrap CSS --------- -->
+    <!-- <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="/home&all/bootstrap-copy.css" />
+    <link rel="stylesheet" href="/home&all/homePage.css" />
+    <link rel="stylesheet" href="/home&all/registrationPage.css" />
+  </head>
+
+  <body>
+    <div class="container-fluid" id="overrides">
+      <!-- ========== navBAr ============= -->
+      <div class="navBar">
+        <!-- ------- nav top --------- -->
+        <div class="nav_top">
+          <!-- ---------- nav top left ------------ -->
+          <div class="nav_top-left pt-2" style="width: 250px">
+            <div class="logo text-center ps-5">
+              <h6 style="width: 200px">Steel Digital Market</h6>
+            </div>
+            <div class="categories">
+              <div><i class="fa-solid fa-list"></i></div>
+              <div class="ps-1 pe-1">Categories</div>
+              <div><i class="fa-solid fa-angle-down"></i></div>
+            </div>
+          </div>
+          <!-- ---------- nav top right ------------ -->
+          <div class="nav_top-right pt-2" style="width: 550px">
+            <!-- ---------- nav top right-1 ------------ -->
+            <div class="nav_top-right-1 d-flex" style="width: 200px">
+              <!-- ---- profile --- -->
+              <div id="profile" class="profile">
+                <i class="fa-solid fa-user px-1"></i>
+
+                <i class="fa-solid fa-angle-down px-1"></i>
+
+                <div
+                  id="profile-popup"
+                  class="profile-popup rounded-3 bg-white"
+                  style="width: 15%"
+                >
+                  <div class="m-2 p-2">
+                    <div class="d-grid gap-2">
+                      <a
+                        href="#"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--bs-indigo);
+                          background: var(--bs-indigo);
+                        "
+                      >
+                        Sign in
+                      </a>
+                      <a
+                        href="./registrationPage.html"
+                        class="btn rounded-5 p-1 fw-bold btn-outline"
+                        style="border: 1px solid gray"
+                      >
+                        Join for free
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- ---- messages --- -->
+              <div class="messages">
+                <i class="fa-solid fa-message px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+              <!-- ---- trade_assurance --- -->
+              <div class="trade_assurance">
+                <i class="fa-solid fa-clipboard-list px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+              <!-- ----  --- -->
+              <div class="bag">
+                <i class="fa-solid fa-bag-shopping px-1"></i>
+                <i class="fa-solid fa-angle-down px-1"></i>
+              </div>
+            </div>
+            <!-- ---------- nav top right-2 ------------ -->
+            <div class="nav_top-right-2 d-flex" style="width: 350px">
+              <div class="delimiter"></div>
+              <div class="help d-flex">
+                Help
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <div class="delimiter"></div>
+              <div class="d-flex">
+                English-BDT
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+              <!-- <div class="delimiter"></div> -->
+              <div class="location d-flex">
+                Ship to:
+                <div>
+                  <img class="img-fluid" src="./images/bangladesh.png" alt="" />
+
+                  <!-- <img class="img-fluid" src="./images/bangladesh.png" alt="" /> -->
+                  <i class="fa-solid fa-angle-down"></i>
+                </div>
+              </div>
+              <div class="delimiter"></div>
+              <div class="more d-flex">
+                More
+                <i class="fa-solid fa-angle-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ------- nav top end --------- -->
+
+        <!-- ------- nav bottom --------- -->
+        <div class="nav_bottom"></div>
+        <!-- <div class="background_darker"></div> -->
+      </div>
+      <!-- ========== navBAr End ============= -->
+      <!-- ========== main body ============= -->
+      <div class="main_body ms-5 me-5 p-3 d-flex justify-content-center">
+        <!-- ================ JUst For You ============ -->
+        <div
+          class="rounded-3 ps-2 bg-white mt-3 d-flex justify-content-center"
+          style="height: 300px; width: fit-content"
+        >
+          <form class="p-2" action="">
+            <div class="row" style="margin-top: 50px">
+              <!-- Email Address  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Email Address:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text text-muted"
+                    type="text"
+                    id="email"
+                    name="email"
+                    placeholder="Please enter your email"
+                  />
+                </div>
+              </div>
+              <!-- end of Email Address  -->
+              <!-- Login Password  -->
+              <div class="form_item d-flex">
+                <!-- label -->
+                <div class="label_col col d-flex mt-2">
+                  <h6 class="fw-3 fs-4 pe-1" style="color: red">*</h6>
+                  <h6>Password:</h6>
+                </div>
+                <!-- inputs -->
+                <div class="input_col col">
+                  <input
+                    class="border text-muted"
+                    type="text"
+                    id="login_password"
+                    name="login_password"
+                    placeholder="Enter your password"
+                  />
+                </div>
+              </div>
+              <!-- end of Login Password  -->
+            </div>
+            <div class="d-flex justify-content-center text-muted">
+              <input type="checkbox" />
+              <p class="mt-1 m-1">Keep me Logged in</p>
+            </div>
+            <div class="d-flex justify-content-center mt-2 m-2">
+              <button
+                class="rounded-3 p-2 fs-6 w-25"
+                id="register_button"
+                type="submit"
+              >
+                Sign in
+              </button>
+            </div>
+          </form>
+        </div>
+        <!-- ================ registration end ============ -->
+      </div>
+
+      <!-- ========== footer ============= -->
+      <div class="footer">
+        <!-- footer top -->
+        <div class="ms-5 me-5 mt-3 mb-3 ps-5 pe-5">
+          <div class="p-2">
+            <div class="d-flex justify-content-around">
+              <!-- customer service -->
+              <div class="text-white d-grid h-100">
+                <h6>Customer services</h6>
+                <a href="#">Help Center</a>
+                <a href="#">Report abuse</a>
+                <a href="#">Open a case</a>
+                <a href="#">Policies & rules</a>
+                <a href="#">Get paid for your feedback</a>
+              </div>
+              <!-- about us -->
+              <div class="text-white d-grid h-100">
+                <h6>About us</h6>
+                <a href="#">About AeSteelbd.com</a>
+                <a href="#">About eSteelbd Group</a>
+                <a href="#">eSteelbd.com Blog</a>
+                <a href="#">Legal Notice</a>
+              </div>
+              <!-- Source on eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Source on eSteelbd.com</h6>
+                <a href="#">Resources</a>
+                <a href="#">All categories</a>
+                <a href="#">Request for Quotation</a>
+                <a href="#">Ready to Ship</a>
+                <a href="#">Buyer partners</a>
+                <a href="#">eSteelbd.com Select</a>
+              </div>
+              <!-- Sell on  eSteelbd.com -->
+              <div class="text-white d-grid h-100">
+                <h6>Sell on eSteelbd.com</h6>
+                <a href="#">Supplier memberships</a>
+                <a href="#">Learning Center</a>
+                <a href="#">Partner Program</a>
+              </div>
+              <!-- Trade services -->
+              <div class="text-white d-grid h-100">
+                <h6>Trade services</h6>
+                <a href="#">Trade Assurance</a>
+                <a href="#">Business identity</a>
+                <a href="#">Logistics services</a>
+                <a href="#">Production Monitoring & Inspection Services</a>
+                <a href="#">Letter of Credit</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer_delimiter m-3"></div>
+
+          <!-- footer bottom -->
+          <div class="text-white d d-flex justify-content-around pe-5 ps-5 p-1">
+            <!-- bottoms top -->
+
+            <div class="text-white d d-flex justify-content-around">
+              <!-- download apps -->
+              <span class="pt-1">Download: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/App store.PNG"
+                alt=""
+              />&nbsp
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 100px"
+                src="./images/google play.PNG"
+                alt=""
+              />
+            </div>
+            <!-- suppliers app -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-1">eSteelbd Suppliers App: &nbsp</span>
+              <img
+                class="rounded-3"
+                style="height: 30px; width: 30px"
+                src="./images/NDE_Favicon3-modified .png"
+                alt=""
+              />
+            </div>
+            <!-- Follow Us -->
+            <div class="text-white d d-flex justify-content-around">
+              <span class="mt-2">Follow Us: &nbsp</span>
+              <div class="social_media fs-4">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-youtube"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+              </div>
+            </div>
+          </div>
+          <div class="footer_appendix text-white m-2 text-center">
+            <div>
+              <i class="fa-solid fa-earth-asia"></i>
+              eSteelbd Site: International - Español - Português - Deutsch -
+              Français - Italiano - हिंदी - Pусский - 한국어 - 日本語 - اللغة
+              العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - Indonesian -
+              עברית
+            </div>
+            <div>
+              eSteelbd.com | 1688.com | Tmall Taobao World | ePay | Lazada
+            </div>
+            <div>
+              Browse Alphabetically: Onetouch | Showroom | Country Search |
+              Suppliers | Affiliate
+            </div>
+            <div>
+              Product Listing Policy - Intellectual Property Protection -
+              Privacy Policy - Terms of Use - User Information Legal Enquiry
+              Guide
+            </div>
+          </div>
+          <div class="copyright text-white text-center m-3">
+            © 2023-2023 eSteelbd.com. All rights reserved.
+          </div>
+        </div>
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script> -->
+    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="/home&all/registrationPage.js"></script>
+    <!-- <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script> -->
+  </body>
+</html>

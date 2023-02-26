@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product_details</title>
+    <link rel="stylesheet" href="/sellers&Product_details/bootstrap/css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      href="/sellers&Product_details/product_details/product_details.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <!-- link css -->
+    <link rel="stylesheet" href="/home&all/homePage.css" />
+    <link rel="stylesheet" href="/home&all/bootstrap-copy.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="header">
+        <section id="header_section">
+          <!-- ========== navBAr ============= -->
+          <div class="navBar">
+            <!-- ------- nav top --------- -->
+            <div class="nav_top">
+              <!-- ---------- nav top left ------------ -->
+              <div class="nav_top-left pt-2" style="width: 250px">
+                <div class="logo text-center ps-5">
+                  <h6 style="width: 200px">Steel Digital Market</h6>
+                </div>
+                <div class="categories">
+                  <div><i class="fa-solid fa-list"></i></div>
+                  <div class="ps-1 pe-1">Categories</div>
+                  <div><i class="fa-solid fa-angle-down"></i></div>
+                </div>
+              </div>
+              <!-- ---------- nav top right ------------ -->
+              <div class="nav_top-right pt-2" style="width: 550px">
+                <!-- ---------- nav top right-1 ------------ -->
+                <div class="nav_top-right-1 d-flex" style="width: 200px">
+                  <!-- ---- profile --- -->
+                  <div id="profile" class="profile">
+                    <i class="fa-solid fa-user px-1"></i>
+
+                    <i class="fa-solid fa-angle-down px-1"></i>
+
+                    <div
+                      id="profile-popup"
+                      class="profile-popup rounded-3 bg-white"
+                      style="width: 15%"
+                    >
+                      <div class="m-2 p-2">
+                        <div class="d-grid gap-2">
+                          <a
+                            href="./signinPage.html"
+                            class="btn rounded-5 p-1 fw-bold text-white"
+                            style="
+                              border: 1px solid var(--bs-indigo);
+                              background: var(--bs-indigo);
+                            "
+                          >
+                            Sign in
+                          </a>
+                          <a
+                            href="./registrationPage.html"
+                            class="btn rounded-5 p-1 fw-bold btn-outline"
+                            style="border: 1px solid gray"
+                          >
+                            Join for free
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- ---- messages --- -->
+                  <div class="messages">
+                    <i class="fa-solid fa-message px-1"></i>
+                    <i class="fa-solid fa-angle-down px-1"></i>
+                  </div>
+                  <!-- ---- trade_assurance --- -->
+                  <div class="trade_assurance">
+                    <i class="fa-solid fa-clipboard-list px-1"></i>
+                    <i class="fa-solid fa-angle-down px-1"></i>
+                  </div>
+                  <!-- ----  --- -->
+                  <div class="bag">
+                    <i class="fa-solid fa-bag-shopping px-1"></i>
+                    <i class="fa-solid fa-angle-down px-1"></i>
+                  </div>
+                </div>
+                <!-- ---------- nav top right-2 ------------ -->
+                <div class="nav_top-right-2 d-flex" style="width: 350px">
+                  <div class="delimiter"></div>
+                  <div class="help d-flex">
+                    Help
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <div class="delimiter"></div>
+                  <div class="d-flex">
+                    English-BDT
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                  <!-- <div class="delimiter"></div> -->
+                  <div class="location d-flex">
+                    Ship to:
+                    <div>
+                      <img
+                        class="img-fluid"
+                        src="/home&all/images/bangladesh.png"
+                        alt=""
+                      />
+
+                      <!-- <img class="img-fluid" src="./images/bangladesh.png" alt="" /> -->
+                      <i class="fa-solid fa-angle-down"></i>
+                    </div>
+                  </div>
+                  <div class="delimiter"></div>
+                  <div class="more d-flex">
+                    More
+                    <i class="fa-solid fa-angle-down"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- ------- nav top end --------- -->
+
+            <!-- ------- nav bottom --------- -->
+            <div class="nav_bottom" style="height: 250px">
+              <div class="nav_bottom-header d-flex">
+                <a
+                  href="/home&all/productsPage.html"
+                  class="nav_bottom-header-item m-3"
+                  >Products</a
+                >
+                <a
+                  href="/sellers&Product_details/Index.html"
+                  class="nav_bottom-header-item m-3"
+                  >Sellers</a
+                >
+                <!-- <div class="nav_bottom-header-item m-3">Sellers</div> -->
+              </div>
+            </div>
+            <!-- <div class="background_darker"></div> -->
+          </div>
+          <!-- ========== navBAr End ============= -->
+        </section>
+      </div>
+      <div id="body" style="margin-left: 40px; margin-right: 10px">
+        <section
+          id="deatails_body_and_delivery"
+          class="mb-3 shadow p-3 mb-4 bg-white rounded"
+        >
+          <div class="row m-4">
+            <div class="col-md-8 d-flex">
+              <div id="product_image" class="m-3">
+                <img
+                  id="root_img"
+                  style="width: 420px; height: 350px"
+                  src="/sellers&Product_details/product_details/img/1st_img.png"
+                  alt=""
+                />
+                <div class="d-flex justify-content-center m-3">
+                  <img
+                    onclick="change(0)"
+                    style="width: 80px; height: 70px; margin-right: 10px"
+                    src="/sellers&Product_details/product_details/img/1st_img.png"
+                    alt=""
+                  />
+                  <img
+                    onclick="change(1)"
+                    style="width: 80px; height: 70px; margin-right: 10px"
+                    src="/sellers&Product_details/product_details/img/i2.png"
+                    alt=""
+                  />
+                  <img
+                    onclick="change(2)"
+                    style="width: 80px; height: 70px; margin-right: 10px"
+                    src="/sellers&Product_details/product_details/img/i3.png"
+                    alt=""
+                  />
+                  <img
+                    onclick="change(3)"
+                    style="width: 80px; height: 70px; margin-right: 10px"
+                    src="/sellers&Product_details/product_details/img/1st_img.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div style="font-size: 16px" class="m-3">
+                <h3 class="mb-5">
+                  Anti-lost keychain with Mobile Number for Bicycle Car Auto
+                  Motor Cycle Key Ring Gift for Husband
+                </h3>
+                <img
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                  src="/sellers&Product_details/product_details/img/full_star.png"
+                  alt=""
+                />
+                <img
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                  src="/sellers&Product_details/product_details/img/full_star.png"
+                  alt=""
+                />
+                <img
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                  src="/sellers&Product_details/product_details/img/full_star.png"
+                  alt=""
+                />
+                <img
+                  style="width: 20px; height: 20px; margin-right: 10px"
+                  src="/sellers&Product_details/product_details/img/full_star.png"
+                  alt=""
+                />
+                <a style="font-size: 16px" class="text-center mt-2" href="#"
+                  >314 Ratings</a
+                >
+                | <a href="#">! Answered Questions</a><br />
+                <label>Brand: </label> <a href="#">No Brand</a> |
+                <a href="#">More Automotive form No Brand</a>
+                <h2 class="mt-5">৳ 99</h2>
+                <span><s>৳ 300</s></span> <span> -67%</span><br />
+                <p class="mb-5"></p>
+                <div class="w-100 mb-5">
+                  <label>Quantity</label>
+                  <button class="w-25" type="button">-</button>
+                  <label> 1 </label>
+                  <button class="w-25" type="button">+</button>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <a
+                    class="btn btn-outline-dark w-50 m-2"
+                    href="#"
+                    style="background: rgb(215, 212, 238)"
+                    >Buy Now</a
+                  >
+                  <a class="btn btn-outline-dark w-50 m-2" href="#"
+                    >Add to Bag
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div
+              id="delivery"
+              style="font-size: 14px"
+              class="col-6 col-md-4 mb-4 mt-4"
+            >
+              <div>
+                <div>
+                  <p>Delivery</p>
+                </div>
+                <div class="d-flex justify-content-between m-4">
+                  <div>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <label>Dhaka, Dhaka North, Banani Road No. 12 - 19</label>
+                  </div>
+                  <a href="#">CHANGE</a>
+                </div>
+                <div class="d-flex justify-content-between m-4">
+                  <div>
+                    <i class="bi bi-geo-alt-fill"></i>
+                    <span>Standard Delivery</span>
+                    <small>3-5day(s)</small>
+                  </div>
+                  <h4>৳ 62</h4>
+                </div>
+                <div class="text-center">
+                  Enjoy free shipping promotion with minimum spend of ৳ 5,000
+                  from <a href="#"> Crazy Shop.</a>
+                </div>
+                <div class="d-flex">
+                  <i class="bi bi-geo-alt-fill m-2"></i>
+                  <h4 class="m-2">Cash on Delivery Available</h4>
+                </div>
+              </div>
+              <div>
+                <div class="mt-4">
+                  <p>Service</p>
+                </div>
+                <div class="d-flex justify-content-start m-4">
+                  <i style="font-size: 30px" class="bi bi-geo-alt-fill"></i>
+                  <div class="m-0 p-0 ml-2">
+                    <h4>7 Days Returns</h4>
+                    <small>Change of mind is not applicable</small>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-start m-4">
+                  <i style="font-size: 25px" class="bi bi-geo-alt-fill"></i>
+                  <div class="text-center">
+                    <h4>Warranty not available</h4>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <div class="d-flex justify-content-between m-4">
+                  <div>
+                    <small>Sold by</small>
+                    <h4>Crazy Shop</h4>
+                  </div>
+                  <div>
+                    <a href="#">CHAT</a>
+                  </div>
+                </div>
+                <div class="d-flex justify-content-around">
+                  <small>Positive Seller Ratings</small>
+                  <small>Ship on Time</small>
+                  <small>Chat Response Rate</small>
+                </div>
+                <div class="d-flex justify-content-around">
+                  <h4>83%</h4>
+                  <h4>100%</h4>
+                  <h4>100%</h4>
+                </div>
+                <div class="text-center mb-5 mt-4">
+                  <a class="fs-5 mb-5" href="#">Visit Store</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section id="combo_offer" class="mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded">
+                <div class="row">
+                    <div style="font-size: 20px;" class="col-md-12 text-start d-flex justify-content-around m-4">
+                        <div class="t">
+                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i1.png" alt=""> +
+                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i2.png" alt=""> +
+                            <img style="margin-right: 10px;" src="/sellers&Product_details/product_details/img/i3.png" alt="">
+                            <p class="pt-4">Total: ৳ 346</p>
+                            <p>
+                            <h4>Combo Price: ৳ 346</h4> Save ৳ 3</p>
+                        </div>
+                        <a style="font-size: 16px; margin-top: 140px; height: 35px; margin-right: 80px;"
+                            class="btn btn-primary text-center" href="#"> Add 3 To bag</a>
+                    </div>
+                </div>
+            </section> -->
+        <section
+          id="Product_full_details"
+          class="mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+        >
+          <div class="row">
+            <div style="font-size: 16px" class="col-md-10">
+              <div>
+                <div>
+                  <h3>
+                    Product details of Anti-lost keychain with Mobile Number for
+                    Bicycle Car Auto Motor Cycle Key Ring Gift for Husband
+                  </h3>
+                </div>
+                <div class="d-flex mb-4 mt-4">
+                  <div>
+                    <ul>
+                      <li>It can prevent the key from being lost.</li>
+                      <li>Easy to carry.</li>
+                      <li>
+                        People use it to prevent losing phone number cards,
+                        losing keys, losing pets and key pendants.
+                      </li>
+                      <li>Category: Key pendant</li>
+                      <li>Material: metal</li>
+                      <li>Size: 70x14x3mm</li>
+                      <li>Color: Black,Red,Black and Red</li>
+                      <li>Quantity: 1Set</li>
+                      <li>1X keychain</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <ul>
+                      <li>1x digital stickers (6 groups)</li>
+                      <li>Category: Key pendant</li>
+                      <li>material: metal</li>
+                      <li>Size: 70x14x3mm</li>
+                      <li>Color: black</li>
+                      <li>quantity: 1</li>
+                      <li>1X keychain</li>
+                      <li>1x digital stickers (6 groups)</li>
+                      <li>1 X Screwdriver</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="m-0 p-0">
+                  <p>
+                    Anti-lost keychain with Mobile Number for Bicycle Car Auto
+                    Motor Cycle Key Ring Gift for Husband
+                  </p>
+                  <p>100% New Brand And High Quality</p>
+                  <p>Material: Plastic, Leather</p>
+                  <p>Color: As Picture</p>
+                  <p>Type: Anti-lost</p>
+                  <p>
+                    Application: door keys, car keys, backpack pendants, etc.
+                  </p>
+                  <p>Package included: 1 x Key Chain</p>
+                  <p>1 x Lanyard</p>
+                  <p>1 x Set of Phone Number(6 Groups)</p>
+                  <p>1 X Screwdriver</p>
+                  <img src="/product_details/img/big_item.jpg" alt="" />
+                </div>
+                <div>
+                  <h4>
+                    Specifications of Anti-lost keychain with Mobile Number for
+                    Bicycle Car Auto Motor Cycle Key Ring Gift for Husband
+                  </h4>
+                  <div class="d-flex justify-content-between">
+                    <div class="p-0">
+                      <p class="">Brand</p>
+                      <h6>No Brand</h6>
+                    </div>
+                    <div>
+                      <p>SKU</p>
+                      <h6>239097681_BD-1182669329</h6>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </section>
+        <section
+          id="Product_rating_review"
+          class="m-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+        >
+          <div class="row">
+            <div class="col-md-10">
+              <div id="rating">
+                <div class="mb-4">
+                  <h4>
+                    Ratings & Reviews of Anti-lost keychain with Mobile Number
+                    for Bicycle Car Auto Motor Cycle Key Ring Gift for Husband
+                  </h4>
+                </div>
+                <div class="d-flex justify-content-around">
+                  <div>
+                    <h1 style="font-size: 40px">4/5</h1>
+                    <img
+                      style="width: 40px; height: 30px"
+                      src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                      alt=""
+                    />
+                    <img
+                      style="width: 40px; height: 30px"
+                      src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                      alt=""
+                    />
+                    <img
+                      style="width: 40px; height: 30px"
+                      src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                      alt=""
+                    />
+                    <img
+                      style="width: 40px; height: 30px"
+                      src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                      alt=""
+                    />
+                    <small>314 Rating</small>
+                  </div>
+                  <div class="">
+                    <div class="d-flex justify-content-end">
+                      <div class="m-2">
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="m-2 p-1">
+                        <div
+                          class=""
+                          style="
+                            width: 120px;
+                            height: 10px;
+                            background: rgb(167, 167, 167);
+                          "
+                        >
+                          <div
+                            class="bg-warning"
+                            style="width: 110px; height: 10px"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="m-2 pt-0">
+                        <span>269</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="m-2">
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-1 m-2 align-items-start">
+                        <div
+                          class=""
+                          style="
+                            width: 120px;
+                            height: 10px;
+                            background: rgb(167, 167, 167);
+                          "
+                        >
+                          <div
+                            class="bg-warning"
+                            style="width: 100px; height: 10px"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="m-2 pt-0 text-center">
+                        <span>260</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="m-2">
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-1 m-2">
+                        <div
+                          class=""
+                          style="
+                            width: 120px;
+                            height: 10px;
+                            background: rgb(167, 167, 167);
+                          "
+                        >
+                          <div
+                            class="bg-warning"
+                            style="width: 70px; height: 10px"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="m-2 pt-0">
+                        <span>169</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="m-2">
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-1 m-2 align-items-end">
+                        <div
+                          class=""
+                          style="
+                            width: 120px;
+                            height: 10px;
+                            background: rgb(167, 167, 167);
+                          "
+                        >
+                          <div
+                            class="bg-warning"
+                            style="width: 60px; height: 10px"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="m-2 pt-0">
+                        <span>139</span>
+                      </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                      <div class="m-2">
+                        <img
+                          style="width: 20px; height: 15px"
+                          src="/sellers&Product_details/product_details/img/review_star/TB19ZvEgfDH8KJjy1XcXXcpdXXa-64-64.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="p-1 m-2">
+                        <div
+                          class=""
+                          style="
+                            width: 120px;
+                            height: 10px;
+                            background: rgb(167, 167, 167);
+                          "
+                        >
+                          <div
+                            class="bg-warning"
+                            style="width: 40px; height: 10px"
+                          ></div>
+                        </div>
+                      </div>
+                      <div class="m-2 pt-0">
+                        <span>104</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="Product_Reviews">
+                <p>Product Reviews</p>
+              </div>
+              <div style="font-size: 16px" id="person-review" class="">
+                <div class="mb-5">
+                  <img src="/product_details/img/full_star.png" alt="" />
+                  <p>by Aktarul P. <label>Verified Pirchase</label></p>
+                  <p>দাম হিসেবে প্রডাক্ট এর রেটিং করলে আমার মতে ৮/১০।</p>
+                  <p>
+                    প্রডাক্ট প্যাকেজিং এর আগে চেক করে দিলে আরো ভাল হবে। দাম
+                    হিসেবে প্রডাক্ট এর রেটিং করলে আমার মতে ৮/১০।
+                  </p>
+                  <div class="d-flex">
+                    <img
+                      id="r1"
+                      onclick="show(1)"
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/1.jpg"
+                      alt=""
+                    />
+                    <img
+                      id="r2"
+                      onclick="show(2)"
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/2.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/3.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/4.jpg"
+                      alt=""
+                    />
+                  </div>
+                  <div id="print"></div>
+                </div>
+                <div>
+                  <img src="/product_details/img/full_star.png" alt="" />
+                  <p>by Aktarul P. <label>Verified Pirchase</label></p>
+                  <p>দাম হিসেবে প্রডাক্ট এর রেটিং করলে আমার মতে ৮/১০।</p>
+                  <p>প্রডাক্ট প্যাকেজিং এর আগে চেক করে দিলে আরো ভাল হবে।</p>
+                  <div class="d-flex">
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/1.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/2.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/3.jpg"
+                      alt=""
+                    />
+                    <img
+                      style="width: 80px; height: 70px; margin: 10px"
+                      src="/sellers&Product_details/product_details/img/review_img/3.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </section>
+        <section
+          id="Questions_About_This_Product"
+          class="m-5 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+        >
+          <div class="row">
+            <div style="font-size: 16px" class="col-md-10 text-start">
+              <h4>Questions About This Product</h4>
+              <div>
+                <p>
+                  <a href="#">Login </a>or <a href="#">Register</a> to ask
+                  questions to seller
+                </p>
+                <p>Other questions answered by Crazy Shop</p>
+              </div>
+              <div class="mb-4">
+                <p>ওর্ডার করছি দয়া করে,,কালো টা দিবেন</p>
+                <small>MD S. - 25 Apr 2022</small>
+              </div>
+              <div class="mt-3">
+                <p>ok</p>
+                <small>Steel Digital Market- answered within 5 days</small>
+              </div>
+            </div>
+            <div class="col-md-2"></div>
+          </div>
+        </section>
+        <section
+          id="People_Who_Viewed_This_Item_Also_Viewed"
+          class="m-5 mb-3 mb-3 shadow p-3 mb-4 bg-white shadow p-3 mb-4 bg-white rounded"
+        >
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <!-- ================ Products ============ -->
+              <div class="rounded-3 ps-2 bg-white mt-3 d-flex">
+                <div class="products rounded-3 mt-2 mb-2 w-100">
+                  <h4 class="ms-3">Products</h4>
+                  <div class="d-flex flex-wrap justify-content-center">
+                    <!-- row 1 -->
+                    <!-- <div class="d-flex ms-3 me-3 mb-3"> -->
+                    <!-- card 1 -->
+                    <div class="product">
+                      <div class="border rounded-3 m-2">
+                        <img
+                          src="/home&all/images/just 1.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="title d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Water Bottle Purple Portable Gym 5v Charging Vortex
+                            Protein Powder Shake Bottle
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card 2 -->
+                    <div class="product">
+                      <div class="border rounded-3 m-2">
+                        <img
+                          src="/home&all/images/just 2.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="title d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Coin Machine
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card -3 -->
+                    <div class="product">
+                      <div class="border rounded-3 m-2">
+                        <img
+                          src="/home&all/images/just 3.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="title d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Gray Bottle
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card 4  -->
+                    <div class="product">
+                      <div class="border rounded-3 m-2">
+                        <img
+                          src="/home&all/images/just 4.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="title d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Earbuds
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card 4  -->
+                    <div class="product">
+                      <div class="border rounded-3 m-2">
+                        <img
+                          src="/home&all/images/just 5.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="title d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Earbuds
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card -5 -->
+                    <div class="product">
+                      <div class="border rounded-3 m-1">
+                        <img
+                          src="/home&all/images/just 6.jpg"
+                          class="card-img-top rounded-3"
+                          alt=""
+                          style="height: 220px"
+                        />
+                        <div class="text-center mt-2">
+                          <span
+                            class="d-inline-block text-truncate"
+                            style="max-width: 200px"
+                          >
+                            Water Bottle Purple Portable Gym 5v Charging Vortex
+                            Protein Powder Shake Bottle
+                          </span>
+                          <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                          <h6 class="text-muted">MOQ: 100 pieces</h6>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- card end -->
+                    <!-- </div> -->
+                    <!-- row-1 end -->
+                    <!-- row-2  -->
+                    <!-- <div class="d-flex justify-content-between ms-3 me-3 mb-3"> -->
+                    <!-- card end -->
+                    <!-- </div> -->
+                    <!-- row-3 end -->
+                  </div>
+                </div>
+              </div>
+              <!-- ================Products end ============ -->
+            </div>
+            <!-- <div class="col-md-2"></div> -->
+          </div>
+        </section>
+      </div>
+      <div id="foot">
+        <!-- ========== footer Start ============= -->
+        <div class="footer">
+          <!-- footer top -->
+          <div class="ms-5 me-5 mt-3 mb-3 ps-5 pe-5">
+            <div class="p-2">
+              <div class="d-flex justify-content-around">
+                <!-- customer service -->
+                <div class="text-white d-grid h-100">
+                  <h6>Customer services</h6>
+                  <a href="#">Help Center</a>
+                  <a href="#">Report abuse</a>
+                  <a href="#">Open a case</a>
+                  <a href="#">Policies & rules</a>
+                  <a href="#">Get paid for your feedback</a>
+                </div>
+                <!-- about us -->
+                <div class="text-white d-grid h-100">
+                  <h6>About us</h6>
+                  <a href="#">About AeSteelbd.com</a>
+                  <a href="#">About eSteelbd Group</a>
+                  <a href="#">eSteelbd.com Blog</a>
+                  <a href="#">Legal Notice</a>
+                </div>
+                <!-- Source on eSteelbd.com -->
+                <div class="text-white d-grid h-100">
+                  <h6>Source on eSteelbd.com</h6>
+                  <a href="#">Resources</a>
+                  <a href="#">All categories</a>
+                  <a href="#">Request for Quotation</a>
+                  <a href="#">Ready to Ship</a>
+                  <a href="#">Buyer partners</a>
+                  <a href="#">eSteelbd.com Select</a>
+                </div>
+                <!-- Sell on  eSteelbd.com -->
+                <div class="text-white d-grid h-100">
+                  <h6>Sell on eSteelbd.com</h6>
+                  <a href="#">Supplier memberships</a>
+                  <a href="#">Learning Center</a>
+                  <a href="#">Partner Program</a>
+                </div>
+                <!-- Trade services -->
+                <div class="text-white d-grid h-100">
+                  <h6>Trade services</h6>
+                  <a href="#">Trade Assurance</a>
+                  <a href="#">Business identity</a>
+                  <a href="#">Logistics services</a>
+                  <a href="#">Production Monitoring & Inspection Services</a>
+                  <a href="#">Letter of Credit</a>
+                </div>
+              </div>
+            </div>
+            <div class="footer_delimiter m-3"></div>
+            <!-- footer bottom -->
+            <div
+              class="text-white d d-flex justify-content-around pe-5 ps-5 p-1"
+            >
+              <!-- bottoms top -->
+              <div class="text-white d d-flex justify-content-around">
+                <!-- download apps -->
+                <span class="pt-1">Download: &nbsp</span>
+                <img
+                  class="rounded-3"
+                  style="height: 30px; width: 100px"
+                  src="/img/footer/App store.PNG"
+                  alt=""
+                />&nbsp
+                <img
+                  class="rounded-3"
+                  style="height: 30px; width: 100px"
+                  src="/img/footer/google play.PNG"
+                  alt=""
+                />
+              </div>
+              <!-- suppliers app -->
+              <div class="text-white d d-flex justify-content-around">
+                <span class="mt-1">eSteelbd Suppliers App: &nbsp</span>
+                <img
+                  class="rounded-3"
+                  style="height: 30px; width: 30px"
+                  src="/img/footer/NDE_Favicon3-modified .png"
+                  alt=""
+                />
+              </div>
+              <!-- Follow Us -->
+              <div class="text-white d d-flex justify-content-around">
+                <span class="mt-2">Follow Us: &nbsp</span>
+                <div class="social_media fs-4">
+                  <i class="fa-brands fa-square-facebook"></i>
+                  <i class="fa-brands fa-square-instagram"></i>
+                  <i class="fa-brands fa-linkedin"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-square-twitter"></i>
+                </div>
+              </div>
+            </div>
+            <div class="footer_appendix text-white m-2 text-center">
+              <div>
+                <i class="fa-solid fa-earth-asia"></i>
+                eSteelbd Site: International - Español - Português - Deutsch -
+                Français - Italiano - हिंदी - Pусский - 한국어 - 日本語 - اللغة
+                العربية - ภาษาไทย - Türk - Nederlands - tiếng Việt - Indonesian
+                - עברית
+              </div>
+              <div>
+                eSteelbd.com | 1688.com | Tmall Taobao World | ePay | Lazada
+              </div>
+              <div>
+                Browse Alphabetically: Onetouch | Showroom | Country Search |
+                Suppliers | Affiliate
+              </div>
+              <div>
+                Product Listing Policy - Intellectual Property Protection -
+                Privacy Policy - Terms of Use - User Information Legal Enquiry
+                Guide
+              </div>
+            </div>
+            <div class="copyright text-white text-center m-3">
+              © 2023-2023 eSteelbd.com. All rights reserved.
+            </div>
+          </div>
+        </div>
+        <!-- ========== footer End ============= -->
+      </div>
+    </div>
+    <script src="/bootstrap/js/bootstrap.bundle.js"></script>
+    <script src="product_details.js"></script>
+  </body>
+</html>

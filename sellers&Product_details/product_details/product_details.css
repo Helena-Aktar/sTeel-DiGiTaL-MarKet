@@ -1,0 +1,68 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  /* font-size: 62.5%; */
+  /* overflow-x: hidden; */
+  scroll-padding-top: 5.5rem;
+  scroll-behavior: smooth;
+}
+/* body{
+    /* background-color: rgb(102, 102, 197); */
+/* background-image: url("/img/body1.jpg");
+
+}  */
+a {
+  text-decoration: none !important;
+  /* color: black !important; */
+}
+#container {
+  /* font-size: 14px; */
+  /* position: relative; */
+  /* width: auto; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 1fr auto 1fr;
+  /* background-color: blueviolet; */
+}
+#header {
+  grid-column: 1/-1;
+  /* background-color: aqua; */
+}
+#body {
+  grid-column: 1/-1;
+  /* background-color:rgb(42, 165, 73); */
+}
+#foot {
+  grid-column: 1/-1;
+  /* background-color:rgb(177, 145, 145); */
+}
+/* header section start */
+
+/* header section end */
+/* =========== footer start ========== */
+.footer {
+  background-color: rgb(40, 50, 57);
+}
+.footer a {
+  font-size: 14px;
+  text-decoration: none;
+  color: white;
+}
+.footer a:hover {
+  text-decoration: underline;
+}
+.footer_delimiter {
+  height: 1.2px;
+  vertical-align: middle;
+  background: #1e2234;
+  z-index: 100;
+}
+.footer_appendix {
+  font-size: 14px;
+}
+/* =========== footer  end ========== */

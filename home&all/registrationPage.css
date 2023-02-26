@@ -1,0 +1,32 @@
+.form_item select {
+  width: 286px;
+  height: 33px;
+  padding: 3px 7px;
+  border-radius: 3.5px;
+  margin: 5px 0;
+  outline: 0;
+  line-height: normal;
+}
+.form_item .label_col {
+  justify-content: end;
+  /* background: rebeccapurple; */
+}
+.form_item .input_col {
+  margin-left: 10px;
+  /* background: rebeccapurple; */
+}
+
+.form_item input[type="text"] {
+  width: 290px;
+  height: 33px;
+  padding: 3px 7px;
+  border-radius: 3.5px;
+  margin: 5px 0;
+  outline: 0;
+  line-height: normal;
+}
+
+#register_button {
+  background: var(--color-primary);
+  color: white;
+}
