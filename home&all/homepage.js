@@ -7,7 +7,7 @@
 function search() {
   const search_value = document.querySelector("#search_product").value;
   localStorage.setItem("searchkey", search_value);
-  window.location.href = "http://127.0.0.1:5502/home&all/productsPage.html";
+  window.location.href = "http://127.0.0.1:5500/home&all/productsPage.html";
   document.querySelector("#search_product").value = "";
 }
 // product details
@@ -90,7 +90,7 @@ function searchscrollFunction() {
     mySearchBar.style.position = "fixed";
     mySearchBar.style.width = "850px";
     mySearchBar.style.left = "450px";
-    mySearchBar.style.top = "0";
+    mySearchBar.style.top = "5px";
 
     // mySearchBar.style.background = "red";
     // fullBar.style.width = "100% !important";

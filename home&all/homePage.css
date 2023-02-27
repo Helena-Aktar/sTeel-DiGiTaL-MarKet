@@ -43,9 +43,9 @@ body {
 .nav_top {
   display: grid;
   grid-template-columns: 1.4fr 5fr;
-  height: 47px;
+  height: 55px;
   background: white;
-  box-shadow: 0 0 16px #8c74cc;
+  box-shadow: 0 0 16px var(--color-primary);
   /* transition: all 1s; */
 }
 /* ---------- nav top  left --------- */
@@ -78,7 +78,7 @@ body {
 .profile-popup {
   position: absolute;
   z-index: 10;
-  top: 45px;
+  top: 60px;
 
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
@@ -370,8 +370,8 @@ body {
 .consumer-popup {
   position: absolute;
   z-index: 8;
-  left: 315px;
-  top: 30px;
+  left: 310px;
+  top: 22px;
   box-shadow: 0 0 1rem var(--color-primary);
   /* popup hidden */
   display: none;
@@ -384,8 +384,17 @@ body {
 .ad-header_text {
   /* display: none; */
 }
-.ad_parrent:hover .ad-header_text {
+.ad_header:hover {
   background: white;
   /*padding: 0;
   height: 17px; */
+}
+
+/* nav icons */
+.nav-icon {
+  font-size: 18px;
+}
+
+.nav-icon-arrow {
+  color: #727272;
 }

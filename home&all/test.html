@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TEst</title>
+    <title>test</title>
     <!-- ===== Iconsout CDN ======= -->
     <link
       rel="stylesheet"
@@ -33,18 +33,19 @@
         <div class="nav_top" style="z-index: 200;">
           <!-- style="position: fixed; width: 100%; z-index: 200;" -->
           <!-- ---------- nav top left ------------ -->
-          <div class="nav_top-left pt-2" style="width: 250px">
-            <div class="logo text-center ps-5">
-              <h6 style="width: 200px">Steel Digital Market</h6>
+          <div class="nav_top-left" style="width: 350px">
+            <div class="logo text-center ps-3">
+              <!-- <h6 style="width: 200px">NDE Digital Market</h6> -->
+              <img style="height: 55px; width: 200px;"  src="./images/NDE_Digital_Market_LOGO.png" alt="">
             </div>
-            <div class="categories">
+            <div class="categories pt-3 ps-4">
               <div><i class="fa-solid fa-list"></i></div>
               <div class="ps-1 pe-1">Categories</div>
               <div><i class="fa-solid fa-angle-down"></i></div>
             </div>
           </div>
           <!-- ---------- nav top right ------------ -->
-          <div class="nav_top-right pt-2" style="width: 550px">
+          <div class="nav_top-right pt-3" style="width: 550px">
             <!-- ---------- nav top right-1 ------------ -->
             <div class="nav_top-right-1 d-flex" style="width: 200px">
               <!-- ---- profile --- -->
@@ -64,8 +65,8 @@
                         href="./signinPage.html"
                         class="btn rounded-5 p-1 fw-bold text-white"
                         style="
-                          border: 1px solid var(--bs-indigo);
-                          background: var(--bs-indigo);
+                          border: 1px solid var( --color-primary);
+                          background: var( --color-primary);
                         "
                       >
                         Sign in
@@ -205,7 +206,7 @@
       <!-- ========== main body ============= -->
       <div class="main_body p-3">
         <!-- --------- main tools --------- -->
-        <div class="main_tools d-flex justify-content-around rounded-3  p-3" style="margin-left: 200px; margin-right: 200px;">
+        <div class="main_tools d-flex justify-content-around rounded-3  p-3" style="margin-left: 150px; margin-right: 150px;">
           <!-- ------- tool 1 ----- -->
           <div class="tool d-flex">
             <div><i class="fa-solid fa-compass pt-2"></i></div>
@@ -235,13 +236,13 @@
         </div>
 
         <!-- ------- main top div -------- -->
-        <div class="row d-flex text-center">
+        <div class="row d-flex text-center mt-5">
           <!-- ad 1 -->
      
-           <div class=" col-1 pe-1" style="position: relative; top: -35px; " >
-            <div class="ad_header bg" style="position: absolute; top: -17px; width: 200px;"> 
-              <span class="text-start"> <h5 class="text-muted ms-1">Advertisement</h5></span>
-              <i id="ad1_cross_button" style="position: absolute; top: 0; right: 0; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+           <div class="ad_parrent col-1 pe-1" style="position: relative; top: -35px; " >
+            <div class="ad_header bg-" style="position: absolute; width: 200px; height: 29px; top: -30px;"> 
+              <span class="text-start"> <p class="ad-header_text fs-3 fw-bold pb-1" style="position:relative; top:-10px;">AD<span class="fs-6">vertisement</span></p> </span>
+              <i id="ad1_cross_button" style="position: absolute;top: 13px;  right: 0; " class="fa-sharp fa-solid fa-xmark bg text-info"></i>
             </div>
              <img class="ad1" style="height: 500px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster (1).png" alt="">
           </div>
@@ -625,17 +626,18 @@
             </div>
             <!-- =========== main top end ================== -->
           </div>
-          <!-- ad 2 -->
-                 <div class=" col-1 pe-1" style="position: relative; top: -35px; right: 60px;" >
-                  <img class="ad2" style="height: 500px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster.png" alt="">
-                  <i id="image_cross_button" style="position: absolute; top: 0; right: -54px; padding: 1px; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
-                <!-- cross button -->
-                  <div class="bg-light ad2_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
-                   
-                    <p>;okjsdfl;kjlsdfj</p>
-                    <i id="image_cross_button-active" style="position: absolute; top: 0; right: 0; z-index: 100;" class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
-                   </div>
-                </div>
+                <!-- ad 2 -->
+           <div class="ad_parrent col-1 pe-1" style="position: relative; top: -35px; right: 60px;" >
+              <div class="ad_header bg-" style="position: absolute; width: 200px; height: 29px; top: -30px;"> 
+               <span class="text-start"> <p class="ad-header_text fs-3 fw-bold pb-1" style="position:relative; top:-10px;">AD<span class="fs-6">vertisement</span></p> </span>
+               <i id="image_cross_button" style="position: absolute; top: 10px; right: 0; padding: 1px; " class="fa-sharp fa-solid fa-xmark text-info"></i>
+              </div>
+              <img class="ad2" style="height: 500px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster.png" alt="">
+              <!-- cross button -->
+              <div class="bg-light ad2_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
+               <p style="text-align: center; padding-top: 200px;"><i id="image_cross_button-active" style="position: absolute; top: 170px; right: 100px; z-index: 100;" class="fa-solid fa-arrow-rotate-right bg-white text-info"></i>Why this ad?</p>
+              </div>
+            </div>
 
         </div>
         
@@ -1058,14 +1060,17 @@
         
         <!-- ============  personal live and sample ================ p-3 w-100 d-flex justify-content-around  style="margin-left: 260px; margin-right: 260px;"-->
         <div class="row d-flex text-center mt-3">
-
-          <!-- ad 3 -->
-           <div class=" col-1 pe-1" style="position: relative; top:-15px " >
-            <div class="ad_header bg" style="position: absolute; top: -17px; width: 200px;"> 
-              <span class="text-start"> <h5 class="text-muted ms-1">Advertisement</h5></span>
-              <i id="ad1_cross_button" style="position: absolute; top: 0; right: 0; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
+            <!-- ad 3 -->
+           <div class="ad_parrent col-1 pe-1" style="position: relative; top: -5px;" >
+            <div class="ad_header" style="position: absolute; width: 200px; height: 29px; top: -30px;"> 
+             <span class="text-start"> <p class="ad-header_text fs-3 fw-bold pb-1" style="position:relative; top:-10px;">AD<span class="fs-6">vertisement</span></p> </span>
+             <i id="image3_cross_button" style="position: absolute; top: 10px; right: 0; padding: 1px; " class="fa-sharp fa-solid fa-xmark text-info"></i>
             </div>
-             <img class="ad1" style="height: 400px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster (2).png" alt="">
+            <img class="ad2" style="height: 400px; width: 200px;" src="/home&all/images/ads/Yellow Minimalist Buy 1 Get 1 Coffee Ads Instagram Story.png" alt="">
+            <!-- cross button -->
+            <div class="bg-light ad3_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
+             <p style="text-align: center; padding-top: 200px;"><i id="image_cross_button-active" style="position: absolute; top: 170px; right: 100px; z-index: 100;" class="fa-solid fa-arrow-rotate-right bg-white text-info"></i>Why this ad?</p>
+            </div>
           </div>
 
           <div class="col-10">
@@ -1094,7 +1099,7 @@
                   <div class="cardText text-center rounded-3">
                     <button
                       class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
-                      style="background: var(--bs-indigo); color: white"
+                      style="background: var( --color-primary); color: white"
                     >
                       Show more
                     </button>
@@ -1135,7 +1140,7 @@
                   <div class="cardText text-center rounded-3">
                     <button
                       class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
-                      style="background: var(--bs-indigo); color: white"
+                      style="background: var( --color-primary); color: white"
                     >
                       Show more
                     </button>
@@ -1177,7 +1182,7 @@
                   <div class="cardText text-center rounded-3">
                     <button
                       class="rounded-pill p-2 w-75 fw-bold fs-6 m-2"
-                      style="background: var(--bs-indigo); color: white"
+                      style="background: var( --color-primary); color: white"
                     >
                       Show more
                     </button>
@@ -1201,25 +1206,26 @@
           </div>
         </div>
       </div>
-      <!-- ad 4 -->
-             <div class=" col-1 pe-1" style="position: relative; top: -15px; right: 60px;" >
-              <img class="ad4" style="height: 400px; width: 200px;" src="/home&all/images/ads/Yellow Minimalist Buy 1 Get 1 Coffee Ads Instagram Story.png" alt="">
-              <i id="image4_cross_button" style="position: absolute; top: 0; right: -54px; padding: 1px; " class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
-            <!-- cross button -->
-              <div class="bg-light ad4_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
-               
-                <p>;okjsdfl;kjlsdfj</p>
-                <i id="image4_cross_button-active" style="position: absolute; top: 0; right: 0; z-index: 100;" class="fa-sharp fa-solid fa-xmark bg-white text-info"></i>
-               </div>
+            <!-- ad 4 -->
+           <div class="ad_parrent col-1 pe-1" style="position: relative; top: -5px; right: 60px;" >
+            <div class="ad_header " style="position: absolute; width: 200px; height: 29px; top: -30px;"> 
+             <span class="text-start"> <p class="ad-header_text fs-3 fw-bold pb-1" style="position:relative; top:-10px;">AD<span class="fs-6">vertisement</span></p> </span>
+             <i id="image4_cross_button" style="position: absolute; top: 10px; right: 0; padding: 1px; " class="fa-sharp fa-solid fa-xmark text-info"></i>
             </div>
+            <img class="ad4" style="height: 400px; width: 200px;" src="/home&all/images/ads/Grey Laptop Promo Poster.png" alt="">
+            <!-- cross button -->
+            <div class="bg-light ad4_active" style="height: 500px; width: 200px;position: absolute; top: 0; display: none;">
+             <p style="text-align: center; padding-top: 200px;"><i id="image_cross_button-active" style="position: absolute; top: 170px; right: 100px; z-index: 100;" class="fa-solid fa-arrow-rotate-right bg-white text-info"></i>Why this ad?</p>
+            </div>
+          </div>
 
     </div>
 
         <!-- ============  personal live and sample  END ================-->
 
         <!-- ================ JUst For You ============ -->
-        <div class="rounded-3 ps-2 bg-white mt-3 d-flex">
-          <div class="products rounded-3 mt-2 mb-2 w-100">
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 80px; margin-right: 80px;">
+          <div class="products rounded-3 mt-2 mb-2 w-100 p-2">
             <h4 class="ms-4">Just For You</h4>
             <div class="d-flex flex-wrap">
               <!-- row 1 -->
@@ -1266,8 +1272,8 @@
                         href="/sellers&Product_details/product_details/product_details.html"
                         class="btn rounded-5 p-1 fw-bold text-white"
                         style="
-                          border: 1px solid var(--bs-indigo);
-                          background: var(--bs-indigo);
+                          border: 1px solid var( --color-primary);
+                          background: var( --color-primary);
                           width: 100px;
                         "
                       >
@@ -1342,8 +1348,8 @@
                         href="/alibaba page/product_details/product_details.html"
                         class="btn rounded-5 p-1 fw-bold text-white"
                         style="
-                          border: 1px solid var(--bs-indigo);
-                          background: var(--bs-indigo);
+                          border: 1px solid var( --color-primary);
+                          background: var( --color-primary);
                           width: 100px;
                         "
                       >
@@ -1417,8 +1423,8 @@
                         href="/sellers&Product_details/product_details/product_details.html"
                         class="btn rounded-5 p-1 fw-bold text-white"
                         style="
-                          border: 1px solid var(--bs-indigo);
-                          background: var(--bs-indigo);
+                          border: 1px solid var( --color-primary);
+                          background: var( --color-primary);
                           width: 100px;
                         "
                       >
@@ -1628,6 +1634,59 @@
                   </div>
                 </div>
               </div>
+              <!-- card 6 -->
+              <div class="product d-flex">
+                <div class="border rounded-3 m-2">
+                  <img
+                    src="./images/just 5.jpg"
+                    class="card-img-top rounded-3"
+                    alt=""
+                    style="height: 220px"
+                  />
+                  <div class="text-center mt-2">
+                    <span
+                      class="d-inline-block text-truncate"
+                      style="max-width: 200px"
+                    >
+                      KeyBoard
+                    </span>
+                    <h5 class="card-text fw-bold fs-6">BDT 1760.50</h5>
+                    <h6 class="text-muted">MOQ: 100 pieces</h6>
+                  </div>
+                </div>
+                <!-- ====== Product details Popup ======= -->
+                <!-- <p style="background-color: blue" class="bg-denger">heloo</p> -->
+                <div
+                  id="product_details-popup"
+                  class="product_details-popup rounded-3 bg-white"
+                  style="width: 350px"
+                >
+                  <div class="m-2 p-2" style="text-align: center">
+                    <img
+                      src="/home&all/images/just 5.jpg"
+                      class="rounded-3 w-25 h-25"
+                      alt=""
+                    />
+                    <div class="notification-body">
+                      <h5>keyboard</h5>
+                      <h5 class="card-text fw-bold fs-6">BDT 160.50</h5>
+                      <h6 class="text-muted">MOQ: 10 pieces</h6>
+                      <a
+                        href="/sellers&Product_details/product_details/product_details.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var( --color-primary);
+                          background: var( --color-primary);
+                          width: 100px;
+                        "
+                      >
+                        See more
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <!-- ====== End of Product details Popup ======= -->
+              </div>
               <!-- card -5 -->
               <div class="product d-flex">
                 <div class="border rounded-3 m-2">
@@ -1676,7 +1735,7 @@
         </div>
         <!-- ================ JUst For You end ============ -->
         <!-- ================ Trade services ============ -->
-        <div class="rounded-3 ps-2 bg-white mt-3 d-flex">
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 80px; margin-right: 80px;">
           <div class="rounded-3 mt-2 mb-2 w-100">
             <div class="d-flex">
               <h4 class="ms-4">Trade services</h4>
@@ -1784,7 +1843,7 @@
         </div>
         <!-- ================ Trade services end ============ -->
         <!-- ================ Trade services ============ -->
-        <div class="rounded-3 ps-2 bg-white mt-3 d-flex">
+        <div class="rounded-3 ps-2 bg-white mt-3 d-flex" style=" margin-left: 60px; margin-right: 60px;">
           <div class="rounded-3 mt-2 mb-2 w-100">
             <div class="d-flex justify-content-between">
               <h4>Suppliers by country or region</h4>
@@ -1978,7 +2037,7 @@
               <!-- about us -->
               <div class="text-white d-grid h-100">
                 <h6>About us</h6>
-                <a href="#">About ANDE.com</a>
+                <a href="#">About NDE.com</a>
                 <a href="#">About eSteelbd Group</a>
                 <a href="#">NDE.com Blog</a>
                 <a href="#">Legal Notice</a>
