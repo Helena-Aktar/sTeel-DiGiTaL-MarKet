@@ -438,14 +438,16 @@ body {
   display: none;
   left: 97%;
   width: 130% !important;
-  z-index: 2;
+  z-index: 1200;
   top: -2%;
   height: 120%;
   align-items: end;
 }
 #top_navber:hover #top_navber_categories_hover {
   display: block;
+  border: 1px solid var(--color-primary);
 }
 #top_sub_navber:hover #top_navber_Categories_sub_hover {
   display: block;
+  border: 1px solid var(--color-primary);
 }
