@@ -393,8 +393,17 @@ body {
 /* nav icons */
 .nav-icon {
   font-size: 18px;
+  /* color: #3a98b9; */
+}
+.nav-icon:hover i {
+  color: #3a98b9;
 }
 
 .nav-icon-arrow {
+  font-size: 14px;
+  /* color: #727272; */
+}
+.nav-icon-arrow:hover {
   color: #727272;
+  transform: rotate(180deg);
 }
