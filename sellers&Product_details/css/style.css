@@ -79,7 +79,7 @@ a {
 /* .nav_bottom-search_bar {
     background: rgb(251, 252, 250);
     width: 100% !important;
-    /* border: 2px solid var(--bs-indigo);
+    /* border: 2px solid var( --color-primary);
   }
   .nav_bottom-search_bar input[type="search"] {
     background: transparent;
@@ -297,6 +297,6 @@ a {
 /* =========== footer  end ========== */
 
 .btn:hover {
-  background: var(--bs-indigo) !important;
+  background: var( --color-primary) !important;
   color: white !important;
 }

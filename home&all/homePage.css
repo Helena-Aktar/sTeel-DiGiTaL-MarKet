@@ -1,5 +1,5 @@
 :root {
-  --color-primary: var(--bs-indigo);
+  --color-primary: #3a98b9;
   --color-gray: hsl(0, 0%, 89%);
   --radius-rounded-pill: 50rem;
 }
@@ -46,6 +46,7 @@ body {
   height: 47px;
   background: white;
   box-shadow: 0 0 16px #8c74cc;
+  /* transition: all 1s; */
 }
 /* ---------- nav top  left --------- */
 .nav_top-left {
@@ -146,7 +147,7 @@ body {
 .nav_bottom-search_bar {
   position: relative;
   top: -1px;
-  border: 3px solid var(--bs-indigo);
+  border: 3px solid var(--color-primary);
   width: 850px !important;
   border-radius: var(--radius-rounded-pill);
 }
@@ -164,7 +165,7 @@ body {
   width: 120px;
   right: -5px;
   border-radius: var(--radius-rounded-pill);
-  /* border: 2px solid var(--bs-indigo); */
+  /* border: 2px solid var( --color-primary); */
 }
 /* -------------- nav_bottom-links ------------------ */
 .nav_bottom-links {
@@ -268,7 +269,7 @@ body {
 /* button */
 .main_top-buyers_club .buyersClub_btn-join {
   color: #fff;
-  background: var(--bs-indigo);
+  background: var(--color-primary);
 }
 .main_top-buyers_club .buyersClub_btn-signin {
   background: #fff;
@@ -380,10 +381,11 @@ body {
 }
 
 /* ===================== ads ==================*/
-.ad_header {
+.ad-header_text {
+  /* display: none; */
 }
-.ad_header:hover {
+.ad_parrent:hover .ad-header_text {
   background: white;
-  padding: 0;
-  height: 17px;
+  /*padding: 0;
+  height: 17px; */
 }

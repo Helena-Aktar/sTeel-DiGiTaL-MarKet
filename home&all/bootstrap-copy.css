@@ -6438,7 +6438,7 @@ fieldset:disabled .btn {
 }
 .carousel-indicators .active {
   opacity: 1;
-  border: 2px solid var(--bs-indigo);
+  border: 2px solid var( --color-primary);
 }
 
 .carousel-caption {

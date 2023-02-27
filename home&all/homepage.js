@@ -83,7 +83,10 @@ window.onscroll = function () {
 };
 
 function searchscrollFunction() {
-  if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+  if (
+    document.body.scrollTop > 150 ||
+    document.documentElement.scrollTop > 150
+  ) {
     mySearchBar.style.position = "fixed";
     mySearchBar.style.width = "850px";
     mySearchBar.style.left = "450px";
@@ -93,6 +96,7 @@ function searchscrollFunction() {
     // fullBar.style.width = "100% !important";
     navTop.style.position = "fixed";
     navTop.style.width = "100%";
+    // navTop.style.transition = "all 10s ease";
   } else {
     mySearchBar.style.position = "relative";
     mySearchBar.style.width = "100%";
@@ -100,6 +104,7 @@ function searchscrollFunction() {
     mySearchBar.style.top = "0";
     fullmySearchBar.style.width = "850px";
     navTop.style.position = "relative";
+    // navTop.style.transition = "all 10s ease";
   }
 }
 

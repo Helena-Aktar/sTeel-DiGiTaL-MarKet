@@ -1,5 +1,5 @@
 :root {
-  --color-primary: var(--bs-indigo);
+  --color-primary: var( --color-primary);
   --color-gray: hsl(0, 0%, 89%);
 }
 *,
