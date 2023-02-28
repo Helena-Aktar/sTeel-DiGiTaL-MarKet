@@ -1,7 +1,4 @@
-:root {
-  --color-primary: var( --color-primary);
-  --color-gray: hsl(0, 0%, 89%);
-}
+
 *,
 *::before,
 *::after {

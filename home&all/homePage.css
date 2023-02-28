@@ -126,6 +126,7 @@ body {
   height: 180px;
   background: url(./images/wp9024378.jpg);
   /* background: url(./images/copy-wp9024378.jpg); */
+  background-size: 300px 150px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 0px -100px;
@@ -441,16 +442,16 @@ body {
 }
 #top_navber_categories_hover::before {
   content: "";
-  background-color: rgb(255, 255, 255);
-  width: 20px;
-  height: 20px;
+  background-color: transparent;
+  width: 140px;
+  height: 40px;
   display: block;
   position: absolute;
-  left: 50px;
-  top: -10px;
-  transform: rotate(45deg);
+  left: 2px;
+  top: -40px;
+  /* transform: rotate(45deg); */
 
-  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.2); */
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
   /* z-index: -40000; */
 }
 #top_navber_Categories_sub_hover {

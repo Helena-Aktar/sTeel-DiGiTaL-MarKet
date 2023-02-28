@@ -31,67 +31,422 @@
       <!-- ========== navBAr ============= -->
       <div class="navBar">
         <!-- ------- nav top --------- -->
-        <div class="nav_top">
+        <div class="nav_top" style="z-index: 10">
+          <!-- style="position: fixed; width: 100%; z-index: 200;" -->
           <!-- ---------- nav top left ------------ -->
-          <div class="nav_top-left m-1">
-            <div class="logo text-center"><h6>Steel Digital Market</h6></div>
-            <div class="categories justify-content-around pt-1">
-              <div><i class="fa-solid fa-list"></i></div>
-              Categories
-              <div><i class="fa-solid fa-angle-down"></i></div>
+          <div class="nav_top-left" style="width: 350px">
+            <div class="logo text-center ps-3">
+              <!-- <h6 style="width: 200px">NDE Digital Market</h6> -->
+              <img
+                style="height: 55px; width: 200px"
+                src="./images/NDE_Digital_Market_LOGO.png"
+                alt=""
+              />
+            </div>
+            <!-- ---------- categories ------------ -->
+            <div id="top_navber" class="pt-3 ps-4">
+              <a
+                href="#"
+                class="d-flex nav-icon2"
+                style="text-decoration: none; color: black"
+              >
+                <i class="fa-solid fa-list pt-1"></i>
+                <div class="ps-1 pe-1">Categories</div>
+                <i class="nav-icon-arrow2 fa-solid fa-angle-down pt-1"></i>
+              </a>
+              <div
+                id="top_navber_categories_hover"
+                class="text-start position-absolute m-3 p-3 bg-white p-3 mb-5 bg-body rounded"
+              >
+                <div id="top_sub_navber" class="pb-3">
+                  <a href="#"
+                    >Industrial Machinery / Construction & Building Machinery /
+                    Vehicles & Accessories / Vehicles &
+                    <i class="bi bi-chevron-down"></i
+                  ></a>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="w-100 h-auto position-absolute m-3 p-3 rounded bg-white"
+                  >
+                    <div class="d-flex">
+                      <div class="m-4">
+                        <h5>Industrial Machinery</h5>
+                        <a href="#">Agricultural Machinery & Equipment</a><br />
+                        <a href="#">Apparel & Textile Machinery</a><br />
+                        <a href="#">Chemical & Pharmaceutical Machinery</a
+                        ><br />
+                        <a href="#">Cleaning Equipment</a><br />
+                        <a href="#"
+                          >Electrical Equipment Manufacturing Machinery</a
+                        ><br />
+                        <a href="#">Electronic Products Machinery</a><br />
+                        <a href="#">View more</a><br /><br />
+                      </div>
+                      <div class="m-4">
+                        <h5>Construction & Building Machinery</h5>
+                        <a href="#">Building Material Machinery</a><br />
+                        <a href="#">Energy & Mineral Equipment</a><br />
+                        <a href="#">Engineering & Construction Machinery</a
+                        ><br />
+                        <a href="#">Used Machinery</a><br />
+                        <a href="#">View more</a><br />
+                      </div>
+                    </div>
+                    <div class="d-flex">
+                      <div class="m-4">
+                        <h5>Vehicle Parts & Accessories</h5>
+                        <a href="#">ATV/UTV Parts & Accessories</a><br />
+                        <a href="#">Aviation Parts & Accessories</a><br />
+                        <a href="#">Bus Parts & Accessories</a><br />
+                        <a href="#">Container Parts & Accessories</a><br />
+                        <a href="#">Go-Kart & Kart Racer Parts & Accessories</a
+                        ><br />
+                        <a href="#">View more</a><br />
+                      </div>
+                      <div class="m-4">
+                        <h5>Vehicles & Transportation</h5>
+                        <a href="#">ATVs & UTVs</a><br />
+                        <a href="#">Automotives</a><br />
+                        <a href="#">Bus</a><br />
+                        <a href="#">Containers</a><br />
+                        <a href="#">Emergency Vehicles</a><br />
+                        <a href="#">Golf Carts</a><br />
+                        <a href="#">View more</a><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Consumer Electronics / Home Appliances<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="w-100 h-auto position-absolute m-3 p-3 rounded bg-white"
+                  >
+                    <div class="d-flex">
+                      <div class="m-4">
+                        <h5>Consumer Electronics</h5>
+                        <a href="#">Blockchain Miners </a><br />
+                        <a href="#">Cables & Commonly Used Accessories</a><br />
+                        <a href="#">Camera, Photo & Accessories</a><br />
+                        <a href="#">Chargers, Batteries & Power Supplies</a
+                        ><br />
+                        <a href="#">Computer Hardware & Software</a><br />
+                        <a href="#">Earphone & Headphone & Accessories</a><br />
+                        <a href="#">View more</a><br /><br />
+                      </div>
+                      <div class="m-4">
+                        <h5>Home Appliances</h5>
+                        <a href="#">Air Conditioning Appliances</a><br />
+                        <a href="#">Cleaning Appliances</a><br />
+                        <a href="#">Home Appliance Parts</a><br />
+                        <a href="#">Home Appliance Stacks</a><br />
+                        <a href="#">Laundry Aplication</a><br />
+                        <a href="#">View more</a><br />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Apparel / Fashion Accessories / Timepieces,Jewelry,Eyewear<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Lights & Lighting / Construction & Real Estate<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Home & Garden / Furniture / Fabric & Textiles Raw Material /
+                    Pet Supplies<i class="bi bi-chevron-down"></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Beauty / Personal Care & Household Cleaning / Health &
+                    Medical<i class="bi bi-chevron-down"></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Packaging & Printing / Office & School Supplies / Testing
+                    Instrument & Equipment<i class="bi bi-chevron-down"></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Electrical Equipment & Supplies<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Tools & Hardware / Security & Protection / Safety /
+                    Fabrication Service<i class="bi bi-chevron-down"></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Electrical Equipment & Supplies / Electronic
+                    Components,Accessories & Telecommunicationse<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Sports & Entertainment / Toys & Hobbies / Gifts & Crafts<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Luggage, Bags & Cases / Shoes & Accessories<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Minerals & Metallurgy / Chemicals / Rubber & Plastics<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Agriculture / Food & Beverage<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Commercial Service Equipment / Business Services<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Renewable Energy / Energy / Environment<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <div id="top_sub_navber">
+                  <p>
+                    Power Transmission / Material Handling<i
+                      class="bi bi-chevron-down"
+                    ></i>
+                  </p>
+                  <div
+                    id="top_navber_Categories_sub_hover"
+                    class="position-absolute m-3 p-3 bg-light p-3 mb-5 bg-body rounded"
+                  >
+                    <p>Partner Program</p>
+                  </div>
+                </div>
+                <!-- <div id="top_sub_navber">
+                      <p>For global suppliers <i class="bi bi-chevron-down"></i></p>
+                        <div id="top_navber_Categories_sub_hover" class="position-absolute m-3 p-3 bg-light">
+                          <p>For global suppliers</p>
+                          <p>For Chinese suppliers</p>
+                          <p>Partner Program</p>
+                        </div>
+                    </div>
+                    <div>
+                      <p>For global suppliers <i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div>
+                      <p>For global suppliers <i class="bi bi-chevron-down"></i></p>
+                    </div>
+                    <div>
+                      <p>For global suppliers <i class="bi bi-chevron-down"></i></p>
+                    </div> -->
+              </div>
             </div>
           </div>
           <!-- ---------- nav top right ------------ -->
-          <div class="nav_top-right pt-2">
+          <div class="nav_top-right pt-2" style="width: 550px">
             <!-- ---------- nav top right-1 ------------ -->
-            <div class="nav_top-right-1 d-flex">
+            <div class="nav_top-right-1 d-flex" style="width: 200px">
               <!-- ---- profile --- -->
-              <div class="profile">
-                <i class="fa-solid fa-user px-1"></i>
-                <i class="fa-solid fa-angle-down px-1"></i>
+              <div id="profile " class="profile nav-icon">
+                <i class="fa-solid fa-user"></i>
+
+                <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
+                <!-- profile popup -->
+                <div
+                  id="profile-popup"
+                  class="profile-popup rounded-3 bg-white"
+                  style="width: 15%"
+                >
+                  <div class="m-2 p-2">
+                    <div class="d-grid gap-2">
+                      <a
+                        href="./signinPage.html"
+                        class="btn rounded-5 p-1 fw-bold text-white"
+                        style="
+                          border: 1px solid var(--color-primary);
+                          background: var(--color-primary);
+                        "
+                      >
+                        Sign in
+                      </a>
+                      <a
+                        href="./registrationPage.html"
+                        class="btn rounded-5 p-1 fw-bold btn-outline"
+                        style="border: 1px solid gray"
+                      >
+                        Join for free
+                      </a>
+                    </div>
+                  </div>
+                </div>
               </div>
+
               <!-- ---- messages --- -->
-              <div class="messages">
-                <i class="fa-solid fa-message px-1"></i>
-                <i class="fa-solid fa-angle-down px-1"></i>
+              <div class="messages nav-icon">
+                <i class="fa-solid fa-message"></i>
+                <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
               </div>
               <!-- ---- trade_assurance --- -->
-              <div class="trade_assurance">
-                <i class="fa-solid fa-clipboard-list px-1"></i>
-                <i class="fa-solid fa-angle-down px-1"></i>
+              <div class="trade_assurance nav-icon">
+                <i class="fa-solid fa-clipboard-list"></i>
+                <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
               </div>
               <!-- ----  --- -->
-              <div class="bag">
-                <i class="fa-solid fa-bag-shopping px-1"></i>
-                <i class="fa-solid fa-angle-down px-1"></i>
+              <div class="bag nav-icon">
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="nav-icon-arrow fa-solid fa-angle-down"></i>
               </div>
             </div>
             <!-- ---------- nav top right-2 ------------ -->
-            <div class="nav_top-right-2 d-flex">
+            <div class="nav_top-right-2 d-flex" style="width: 350px">
               <div class="delimiter"></div>
-              <div class="help d-flex">
+              <div class="help d-flex nav-icon2">
                 Help
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
               </div>
               <div class="delimiter"></div>
-              <div class="d-flex">
+              <div class="d-flex nav-icon2">
                 English-BDT
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
               </div>
               <!-- <div class="delimiter"></div> -->
-              <div class="location d-flex">
+              <div class="location d-flex nav-icon2">
                 Ship to:
                 <div>
-                  <img class="img-fluid" src="./images/bangladesh.png" alt="" />
+                  <img
+                    class="img-fluid ms-1"
+                    src="./images/bangladesh.png"
+                    alt=""
+                  />
 
                   <!-- <img class="img-fluid" src="./images/bangladesh.png" alt="" /> -->
-                  <i class="fa-solid fa-angle-down"></i>
+                  <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
                 </div>
               </div>
               <div class="delimiter"></div>
-              <div class="more d-flex">
+              <div class="more d-flex nav-icon2">
                 More
-                <i class="fa-solid fa-angle-down"></i>
+                <i class="nav-icon-arrow2 fa-solid fa-angle-down mt-1"></i>
               </div>
             </div>
           </div>
@@ -103,7 +458,7 @@
           <div class="nav_bottom-header d-flex">
             <a
               href="./productsPage.html"
-              class="nav_bottom-header-item active m-3"
+              class="nav_bottom-header-item m-3 active"
               >Products</a
             >
             <a
@@ -111,15 +466,15 @@
               class="nav_bottom-header-item m-3"
               >Sellers</a
             >
+            <!-- <div class="nav_bottom-header-item m-3">Sellers</div> -->
           </div>
 
           <!-- ------- search bar ------ -->
-          <div
-            class="d-flex justify-content-center sticky-top"
-            style="z-index: 1000; position: fixed; width: 100%"
-          >
+          <!--      style="z-index: 100; position: fixed; width: 850px; left: 450px" -->
+          <div id="mySearchBar" class="d-flex justify-content-center">
             <div
-              class="nav_bottom-search_bar d-flex justify-content-center rounded-3 w-50 bg-white sticky-top"
+              id="nav_bottom-search_bar"
+              class="nav_bottom-search_bar d-flex justify-content-center bg-white"
             >
               <!-- <div class="flex-grow-1"> -->
               <input
@@ -129,7 +484,7 @@
                 placeholder="search here.."
               />
               <!-- </div> -->
-              <div class="d-flex rounded-pill">
+              <div class="d-flex">
                 <!-- ms-5 mt-1 me-2 ps-4 -->
                 <div class="cam-icon mt-1 me-2">
                   <i class="fa-solid fa-camera pt-2"></i>
@@ -137,6 +492,7 @@
                 <button
                   class="search_button text-center p-2"
                   id="search_button"
+                  onclick="search()"
                 >
                   <i class="fa-solid fa-magnifying-glass"></i>
                   Search
@@ -161,6 +517,12 @@
           </div>
         </div>
         <!-- <div class="background_darker"></div> -->
+      </div>
+      <!-- scroll to top -->
+      <div class="bg-warning">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">
+          <i class="fa-solid fa-angle-up"></i>
+        </button>
       </div>
       <!-- ========== navBAr End ============= -->
       <!-- ========== main body ============= -->
