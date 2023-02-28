@@ -91,6 +91,7 @@ function searchscrollFunction() {
     mySearchBar.style.width = "850px";
     mySearchBar.style.left = "450px";
     mySearchBar.style.top = "5px";
+    mySearchBar.style.zIndex = "20";
 
     // mySearchBar.style.background = "red";
     // fullBar.style.width = "100% !important";
@@ -102,6 +103,7 @@ function searchscrollFunction() {
     mySearchBar.style.width = "100%";
     mySearchBar.style.left = "0";
     mySearchBar.style.top = "0";
+    mySearchBar.style.zIndex = "0";
     fullmySearchBar.style.width = "850px";
     navTop.style.position = "relative";
     // navTop.style.transition = "all 10s ease";

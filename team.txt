@@ -1,8 +1,0 @@
-hello team abc.
-hello team efg.
-
-            <div class="categories pt-3 ps-4">
-              <i class="nav-icon fa-solid fa-list pt-1"></i>
-              <div class="ps-1 pe-1">Categories</div>
-              <i class="nav-icon-arrow fa-solid fa-angle-down pt-1"></i>
-            </div>
